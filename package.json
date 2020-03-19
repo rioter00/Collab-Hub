@@ -1,0 +1,25 @@
+{
+  "name": "covid-collab2020",
+  "version": "1.0.0",
+  "description": "web server and client",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+
+    "start": "node app.js"
+  },
+  "keywords": [
+    "covid19",
+    "heroku",
+    "nodejs"
+  ],
+  "author": "nick-hwang",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^2.1.1"
+  },
+  "engines": {
+    "node": "12.16.1"
+  }
+}
