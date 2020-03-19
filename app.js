@@ -22,7 +22,7 @@ var ids;
 var headers;
 
 function addUsers(id) {
-  if(!users.includes(id)){
+  if (!users.includes(id)) {
     users.push(id);
   }
 }
@@ -33,6 +33,11 @@ function removeUser(id) {
   }
 }
 
+function listUsers() {
+  socket.emit('users', users);
+  console.log(...users);
+}
+
 // serve the homepage
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
@@ -41,9 +46,8 @@ app.get('/', (req, res) => {
 // "Listens" for client connections
 io.sockets.on('connection', function(socket) {
   // print in server console the socket's id
-  console.log('New user connected: ' + socket.id) {
-    addUsers(socket.id);
-  }
+  console.log('New user connected: ' + socket.id);
+  addUsers(socket.id);
   // print the number of users
   console.log('Users connected: ' + users);
   // emits connection established event (from server back to client)
@@ -55,6 +59,9 @@ io.sockets.on('connection', function(socket) {
     id: socket.id
   });
 
+  socket.on('getUsers', function() {
+    listUsers();
+  });
 
   // remove user
   socket.on('disconnect', function(socket) {
@@ -65,4 +72,4 @@ io.sockets.on('connection', function(socket) {
 
 
 
-http.listen(PORT, () => console.log(`Listening on ${ PORT }`))
+http.listen(PORT, () => console.log(`Listening on ${ PORT }`));
