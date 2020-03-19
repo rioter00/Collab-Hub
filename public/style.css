@@ -1,0 +1,131 @@
+/* style.css */
+.greater-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  justify-content: stretch;
+  justify-items: stretch;
+}
+
+.tray {
+  padding: 5px;
+  margin: 10px;
+}
+
+.speed-title {
+  justify-self: stretch;
+  background-color: #92a8df;
+  grid-area: title !important;
+}
+
+.global-title {
+  justify-self: stretch;
+  background-color: #92a8df;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  /* grid-area: title !important; */
+}
+
+.inc-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50px;
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+  grid-template-columns: subgrid;
+  align-items: stretch;
+}
+
+.dec-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50px;
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+  grid-template-columns: subgrid;
+  align-items: stretch;
+}
+
+.tempo-buttons{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50px;
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+  grid-template-columns: subgrid;
+}
+
+.bottom-buttons{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 100px;
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+  /* grid-template-columns: subgrid; */
+  justify-content: stretch;
+  /* grid-area: buttons; */
+}
+
+.rounded {
+  border: solid #000;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: black;
+}
+
+.spawnbutton {
+  /* margin: auto; */
+  /* width: 100%; */
+  /* border: 2px solid green;
+  padding: 20px;
+  background-color: green; */
+}
+
+#collectible-button {
+  background-color: rgb(255, 254, 155) !important;
+}
+
+body {
+  font: 23px Helvetica, Arial;
+}
+
+button{
+  background-color: rgb(130, 254, 255);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: rgb(130, 254, 255);
+  border-radius: 10px;
+}
+
+button:active {
+  background-color: rgb(130, 254, 255);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  border-radius: 10px;
+}
+
+/* form button {
+  width: 20%;
+  background: rgb(130, 254, 255);
+  border: none;
+  padding: 0px;
+  /* margin: 10px; */
+  height: 30px;
+  /* margin:0 auto; */
+  float: left;
+  margin: 5px;
+  border-radius: 10px;
+} */
+
+#bg {
+  background: #FFF;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0px;
+}
