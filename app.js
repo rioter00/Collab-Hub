@@ -23,7 +23,7 @@ var headers;
 let controls = [];
 
 // "Listens" for client connections
-io.sockets.on('connection', function(socket) {
+io.on('connection', function(socket) {
   // print in server console the socket's id
   console.log('New user connected: ' + socket.id);
   addUsers(socket.id);
