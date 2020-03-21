@@ -5,11 +5,11 @@
 /* global $ */
 
 const io = require('socket.io-client');
-const http = require('http');
+// const http = require('http');
 const maxAPI = require("max-api");
 // const socket = io.connect('http://MoxSonicApp.herokuapp.com/');
 // const socket = io.connect('http://127.0.0.1/');
-const socket = io.connect('http://Covid-Collab.herokuapp.com/');
+// const socket = io.connect('http://Covid-Collab.herokuapp.com/');
 // const socket = io.connect('https://noderemoteworkshop.herokuapp.com/');
 
 // events

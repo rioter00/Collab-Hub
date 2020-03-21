@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 295.0, 276.0, 1347.0, 758.0 ],
+		"rect" : [ 213.0, 236.0, 1347.0, 758.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -83,6 +83,17 @@
 						"subpatcher_template" : "",
 						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-13",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 208.0, 518.0, 32.0, 22.0 ],
+									"text" : "print"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-9",
 									"linecount" : 3,
@@ -682,6 +693,14 @@
 							}
  ],
 						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-13", 0 ],
+									"order" : 2,
+									"source" : [ "obj-10", 1 ]
+								}
+
+							}
+, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-15", 0 ],
 									"source" : [ "obj-10", 0 ]
@@ -2057,7 +2076,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 588.5, 442.0, 50.0, 22.0 ],
-					"text" : "13"
+					"text" : "65"
 				}
 
 			}
@@ -2069,7 +2088,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 516.166666666666742, 442.0, 50.0, 22.0 ],
-					"text" : "42"
+					"text" : "69"
 				}
 
 			}
@@ -2270,7 +2289,7 @@
 					"patching_rect" : [ 683.5, 50.0, 100.0, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 624.0, 571.0, 132.5, 26.0 ],
-					"text" : "nick"
+					"text" : "nicklkl"
 				}
 
 			}
@@ -3170,7 +3189,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 460.5, -138.0, 62.0, 22.0 ],
-					"text" : "0"
+					"text" : "1"
 				}
 
 			}
@@ -3195,7 +3214,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 622.5, -219.0, 50.0, 102.0 ],
-					"text" : "start success dictionary u493014077"
+					"text" : "stop success dictionary u918003997"
 				}
 
 			}
@@ -3213,12 +3232,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-26",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 573.5, -65.0, 99.0, 22.0 ],
-					"text" : "\"ready to roq\""
+					"patching_rect" : [ 573.5, -65.0, 99.0, 35.0 ],
+					"text" : "\"control slider1 69\""
 				}
 
 			}
@@ -3243,7 +3263,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 681.5, -181.0, 78.0, 49.0 ],
-					"text" : "stdout \"ready to roq\""
+					"text" : "stop success dictionary u918003997"
 				}
 
 			}
