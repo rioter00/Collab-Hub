@@ -24,27 +24,22 @@ let controls = [];
 
 // "Listens" for client connections
 io.sockets.on('connection', function(socket) {
-  socket.broadcast.emit('connectionEstabilishedGlobal', {
-    id: socket.id
-  });
-
   // print in server console the socket's id
   console.log('New user connected: ' + socket.id);
   addUsers(socket.id);
   // print the number of users
-  // console.log('Users connected: ' + users.id);
+  console.log('Users connected: ' + users.id);
   // emits connection established event (from server back to client)
-  socket.emit('connected', {
-    id: socket.id
-  });
+  // socket.emit('connected', {
+  //   id: socket.id
+  // });
   // broadcasts connection established event to all clients
 
   socket.on('clearUsers', function() {
     socket.broadcast.emit('serverMessage', 'clearing user list');
     console.log("Clearing user list...");
     clearUsers();
-  })
-
+  });
 
   // return a list of lists
   socket.on('addUsername', function(data) {

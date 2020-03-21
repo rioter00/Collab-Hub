@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 135.0, 462.0, 1479.0, 583.0 ],
+		"rect" : [ 436.0, 466.0, 1221.0, 479.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -81,7 +81,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-36",
@@ -188,18 +187,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-39",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 71.5, 333.5, 114.0, 22.0 ],
-					"text" : "script npm --version"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-297",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
@@ -207,29 +194,6 @@
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 181.0, 288.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-295",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 275.75, 113.5, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-293",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 317.0, 231.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -290,7 +254,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 242.75, 503.0, 140.0, 52.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Many ways to get control data."
 				}
 
@@ -348,8 +311,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 869.5, 589.5, 140.0, 37.0 ],
-					"presentation_linecount" : 2,
+					"patching_rect" : [ 869.5, 589.5, 142.0, 37.0 ],
 					"text" : "Get all control data in a dump"
 				}
 
@@ -518,7 +480,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 901.0, 218.0, 94.5, 37.0 ],
-					"presentation_linecount" : 2,
 					"text" : "label your own header"
 				}
 
@@ -626,7 +587,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1374.0, 185.5, 96.0, 49.0 ],
-					"text" : "0.266667 -0.053333 -0.48 -0.293333 0.48"
+					"text" : "-0.426667 -0.053333 0.4 0.426667 0.24"
 				}
 
 			}
@@ -655,7 +616,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 509.5, 477.0, 215.0, 51.0 ],
-					"presentation_linecount" : 5,
 					"text" : "Maybe if you're polling, you might use smoothing between latest values."
 				}
 
@@ -720,7 +680,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 770.5, 472.0, 144.0, 37.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Poll data at our own rate."
 				}
 
@@ -750,7 +709,7 @@
 					"patching_rect" : [ 1142.0, 260.0, 235.0, 52.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 1196.5, 279.0, 138.0, 66.0 ],
+					"presentation_rect" : [ 1196.5, 279.0, 139.0, 66.0 ],
 					"text" : "However you label your single-named header, server will log. "
 				}
 
@@ -1382,7 +1341,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 686.499999999999886, 429.5, 195.0, 35.0 ],
-					"text" : "-0.48 -0.266667 -0.826667 -0.773333 -0.72"
+					"text" : "-0.426667 -0.053333 0.4 0.426667 0.24"
 				}
 
 			}
@@ -1536,7 +1495,7 @@
 					"patching_rect" : [ 683.5, 50.0, 100.0, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 624.0, 571.0, 132.5, 26.0 ],
-					"text" : "eric"
+					"text" : "nick"
 				}
 
 			}
@@ -1571,7 +1530,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 947.0, 106.0, 966.0, 620.0 ],
+						"rect" : [ 785.0, 277.0, 966.0, 620.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1598,14 +1557,13 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-3",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 72.0, 429.0, 32.0, 22.0 ],
+									"patching_rect" : [ 72.0, 332.0, 32.0, 22.0 ],
 									"text" : "print"
 								}
 
@@ -1618,8 +1576,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 34.0, 336.0, 62.0, 35.0 ],
-									"presentation_linecount" : 2,
+									"patching_rect" : [ 34.0, 239.0, 62.0, 35.0 ],
 									"text" : "\"ready to roq\""
 								}
 
@@ -1644,8 +1601,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 196.0, 255.0, 50.0, 102.0 ],
-									"text" : "start success dictionary u653004684"
+									"patching_rect" : [ 196.0, 158.0, 50.0, 102.0 ],
+									"text" : "start success dictionary u364007966"
 								}
 
 							}
@@ -1656,20 +1613,20 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 141.0, 255.0, 50.0, 22.0 ]
+									"patching_rect" : [ 141.0, 158.0, 50.0, 22.0 ]
 								}
 
 							}
 , 							{
 								"box" : 								{
 									"id" : "obj-26",
-									"linecount" : 2,
+									"linecount" : 6,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 68.0, 255.0, 62.0, 35.0 ],
-									"text" : "\"ready to roq\""
+									"patching_rect" : [ 68.0, 158.0, 62.0, 89.0 ],
+									"text" : "\"controlDump [object Object],[object Object]\""
 								}
 
 							}
@@ -1680,7 +1637,7 @@
 									"numinlets" : 4,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 50.0, 190.5, 149.0, 22.0 ],
+									"patching_rect" : [ 50.0, 93.5, 149.0, 22.0 ],
 									"text" : "route running stdout stderr"
 								}
 
@@ -1688,12 +1645,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-37",
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 255.0, 196.0, 128.0, 22.0 ],
-									"text" : "stdout \"ready to roq\""
+									"patching_rect" : [ 255.0, 196.0, 128.0, 49.0 ],
+									"text" : "stdout \"controlDump [object Object],[object Object]\""
 								}
 
 							}
@@ -1958,7 +1916,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 817.0, 119.5, 101.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "addUsername $1"
 				}
 
@@ -2141,7 +2098,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 683.5, 119.5, 66.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "clearUsers"
 				}
 
@@ -2388,8 +2344,6 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 0,
 										"defer" : 0,
-										"node_bin_path" : "",
-										"npm_bin_path" : "",
 										"watch" : 0
 									}
 ,
@@ -2533,8 +2487,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -2723,23 +2675,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-289", 0 ],
-					"order" : 3,
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-293", 0 ],
 					"order" : 1,
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-295", 1 ],
-					"order" : 2,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -3040,13 +2976,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-39", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-36", 0 ],
 					"source" : [ "obj-43", 0 ]
 				}
@@ -3114,6 +3043,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-72", 0 ],
 					"source" : [ "obj-62", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-102", 0 ],
+					"source" : [ "obj-66", 0 ]
 				}
 
 			}

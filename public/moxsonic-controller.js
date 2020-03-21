@@ -19,7 +19,7 @@
     });
 
     $('#inc-button2').click(function() {
-      socket.emit('inc', '2');
+      socket.emit('clearUsers');
       console.log("increaseP2");
       return false; // false does not reload the page
     });

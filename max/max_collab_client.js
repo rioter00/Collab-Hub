@@ -8,10 +8,9 @@ const io = require('socket.io-client');
 const http = require('http');
 const maxAPI = require("max-api");
 //const socket = io.connect('http://MoxSonicApp.herokuapp.com/');
-const socket = io.connect('http://127.0.0.1/:80');
+const socket = io.connect('http://127.0.0.1/');
 // const socket = io.connect('http://covid-collab.herokuapp.com');
 // const socket = io.connect('https://noderemoteworkshop.herokuapp.com/');
-
 
 // events
 maxAPI.addHandler('control', (head, ...vals) => {
@@ -48,28 +47,28 @@ socket.on('users', function (data){
 	maxAPI.outlet(["users", data]);
 });
 
-// Add a connect listener 'connectionEstabilished' id: socket
-socket.on('connected', function (data) {
-  console.log('new connection-max');
-  maxAPI.outlet(["connected", data.id]);
-});
+// // Add a connect listener 'connectionEstabilished' id: socket
+// socket.on('connected', function (data) {
+//   console.log('new connection-max');
+//   maxAPI.outlet(["connected", data.id]);
+// });
+//
+// // Add a connect listener 'connectionEstabilished' id: socket
+// socket.on('connect', function (data) {
+//   console.log('new connection-max');
+//   maxAPI.outlet(["connected", data.id]);
+// });
 
-// Add a connect listener 'connectionEstabilished' id: socket
-socket.on('connect', function (data) {
-  console.log('new connection-max');
-  maxAPI.outlet(["connected", data.id]);
-});
-
-// Add a connect listener 'connectionEstabilished' id: socket
-socket.on('connectionEstabilished-max', function (data) {
-  console.log('new connection-max');
-  maxAPI.outlet(["connected", data.id]);
-});
-
-socket.on('connectionEstabilishedGlobal', function (data) {
-  console.log('new connectionGlobal');
-  maxAPI.outlet(["connected", data.id]);
-});
+// // Add a connect listener 'connectionEstabilished' id: socket
+// socket.on('connectionEstabilished-max', function (data) {
+//   console.log('new connection-max');
+//   maxAPI.outlet(["connected", data.id]);
+// });
+//
+// socket.on('connectionEstabilishedGlobal', function (data) {
+//   console.log('new connectionGlobal');
+//   maxAPI.outlet(["connected", data.id]);
+// });
 
 socket.on('control', function (head, vals) {
   console.log('control ' + head + " " + vals);
