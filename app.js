@@ -34,6 +34,7 @@ io.sockets.on('connection', function(socket) {
   //   id: socket.id
   // });
   // broadcasts connection established event to all clients
+  socket.broadcast.emit('users', users);
 
   socket.on('clearUsers', function() {
     socket.broadcast.emit('serverMessage', 'clearing user list');
