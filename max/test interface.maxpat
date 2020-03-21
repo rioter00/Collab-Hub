@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 54.0, 151.0, 1479.0, 738.0 ],
+		"rect" : [ 135.0, 307.0, 1479.0, 738.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -1351,7 +1351,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 81.0, 966.0, 620.0 ],
+						"rect" : [ 947.0, 106.0, 966.0, 620.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1378,6 +1378,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"bubble" : 1,
@@ -1399,7 +1400,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 196.0, 255.0, 50.0, 102.0 ],
-									"text" : "start success dictionary u515001011"
+									"text" : "start success dictionary u516016952"
 								}
 
 							}
@@ -1417,13 +1418,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-26",
-									"linecount" : 13,
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 68.0, 255.0, 62.0, 183.0 ],
-									"text" : "\"control multi1 0.373333334922791,0.373333334922791,0.373333334922791,0.453333348035812,0.506666660308838\""
+									"patching_rect" : [ 68.0, 255.0, 62.0, 35.0 ],
+									"text" : "\"ready to roq\""
 								}
 
 							}
@@ -1442,13 +1443,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-37",
-									"linecount" : 6,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 255.0, 196.0, 128.0, 89.0 ],
-									"text" : "stdout \"control multi1 0.373333334922791,0.373333334922791,0.373333334922791,0.453333348035812,0.506666660308838\""
+									"patching_rect" : [ 255.0, 196.0, 128.0, 22.0 ],
+									"text" : "stdout \"ready to roq\""
 								}
 
 							}

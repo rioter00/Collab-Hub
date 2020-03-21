@@ -9,7 +9,7 @@ const http = require('http');
 const maxAPI = require("max-api");
 //const socket = io.connect('http://MoxSonicApp.herokuapp.com/');
 // const socket = io.connect('http://127.0.0.1:80/');
-const socket = io.connect('http://covid-collab.herokuapp.com/');
+const socket = io.connect('http://covid-collab.herokuapp.com');
 
 // events
 maxAPI.addHandler('control', (head, ...vals) => {

@@ -7,8 +7,8 @@
 
     // interface functions
     $('#shootbutton1').click(function() {
-      socket.emit('inc', '1');
-      console.log("increaseP1");
+      socket.emit('control', 'slider1', '12');
+      console.log("control slider1 12");
       return false; // false does not reload the page
     });
 
