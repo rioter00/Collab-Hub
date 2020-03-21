@@ -13,7 +13,7 @@
     });
 
     $('#inc-button1').click(function() {
-      socket.emit('control', 'slider1', '12');
+      socket.emit('control', {'header': 'slider1', 'values': 12});
       console.log("control slider1 12");
       return false; // false does not reload the page
     });
