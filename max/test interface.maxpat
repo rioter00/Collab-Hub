@@ -54,7 +54,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 157.0, 218.0, 961.0, 669.0 ],
+						"rect" : [ 457.0, 285.0, 961.0, 669.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -662,7 +662,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 20.0, 423.0, 174.0, 22.0 ],
+									"patching_rect" : [ 20.0, 423.0, 197.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"autostart" : 1,
 										"defer" : 0,
@@ -671,7 +671,7 @@
 										"watch" : 0
 									}
 ,
-									"text" : "node.script test.js @autostart 1"
+									"text" : "node.script moxtest.js @autostart 1"
 								}
 
 							}
@@ -3214,7 +3214,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 622.5, -219.0, 50.0, 102.0 ],
-					"text" : "stop success dictionary u918003997"
+					"text" : "start success dictionary u023005016"
 				}
 
 			}
@@ -3232,13 +3232,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-26",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 573.5, -65.0, 99.0, 35.0 ],
-					"text" : "\"control slider1 69\""
+					"patching_rect" : [ 573.5, -65.0, 99.0, 22.0 ],
+					"text" : "\"ready to roq\""
 				}
 
 			}
@@ -3263,7 +3262,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 681.5, -181.0, 78.0, 49.0 ],
-					"text" : "stop success dictionary u918003997"
+					"text" : "stdout \"ready to roq\""
 				}
 
 			}
