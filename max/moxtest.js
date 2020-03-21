@@ -7,8 +7,9 @@
 const io = require('socket.io-client');
 const http = require('http');
 const maxAPI = require("max-api");
-const socket = io.connect('http://MoxSonicApp.herokuapp.com/');
-//const socket = io.connect('http://127.0.0.1:5000/');
+// const socket = io.connect('http://MoxSonicApp.herokuapp.com/');
+// const socket = io.connect('http://Covid-Collab.herokuapp.com/');
+const socket = io.connect('http://127.0.0.1/');
 // const socket = io.connect('http://angle-shooter.herokuapp.com/');
 
 // Add a connect listener 'connectionEstabilished' id: socket
