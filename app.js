@@ -22,13 +22,12 @@ var ids;
 var headers;
 let controls = [];
 
-// serve the homepage
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
-});
-
 // "Listens" for client connections
 io.sockets.on('connection', function(socket) {
+  socket.broadcast.emit('connectionEstabilishedGlobal', {
+    id: socket.id
+  });
+
   // print in server console the socket's id
   console.log('New user connected: ' + socket.id);
   addUsers(socket.id);
@@ -39,9 +38,6 @@ io.sockets.on('connection', function(socket) {
     id: socket.id
   });
   // broadcasts connection established event to all clients
-  socket.broadcast.emit('connectionEstabilishedGlobal', {
-    id: socket.id
-  });
 
   socket.on('clearUsers', function() {
     socket.broadcast.emit('serverMessage', 'clearing user list');
