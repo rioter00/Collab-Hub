@@ -30,10 +30,14 @@ io.sockets.on('connection', function(socket) {
   // print the number of users
   console.log('Users connected: ' + users.id);
   // emits connection established event (from server back to client)
-  // socket.emit('connected', {
-  //   id: socket.id
-  // });
+  socket.emit('connectionEstabilished-max', {
+    id: socket.id
+  });
   // broadcasts connection established event to all clients
+  socket.broadcast.emit('connectionEstabilishedGlobal', {
+    id: socket.id
+  });
+
   socket.broadcast.emit('users', users);
 
   socket.on('clearUsers', function() {
