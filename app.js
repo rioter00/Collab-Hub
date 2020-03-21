@@ -23,12 +23,12 @@ var headers;
 let controls = [];
 
 // "Listens" for client connections
-io.on('connection', function(socket) {
+io.sockets.on('connection', function(socket) {
+  addUsers(socket.id);
   // print in server console the socket's id
   console.log('New user connected: ' + socket.id);
-  addUsers(socket.id);
   // print the number of users
-  console.log('Users connected: ' + users.id);
+  console.log('Users connected: ' + users);
   // emits connection established event (from server back to client)
   socket.emit('connectionEstabilished-max', {
     id: socket.id
@@ -37,8 +37,6 @@ io.on('connection', function(socket) {
   socket.broadcast.emit('connectionEstabilishedGlobal', {
     id: socket.id
   });
-
-  socket.broadcast.emit('users', users);
 
   socket.on('clearUsers', function() {
     socket.broadcast.emit('serverMessage', 'clearing user list');
