@@ -5,6 +5,10 @@
     // establishes a socket.io connection
     var socket = io();
 
+    socket.on('users', function(users) {
+      console.log("users!: " + users);
+    })
+
     // interface functions
     $('#shootbutton1').click(function() {
       socket.emit('control', 'slider1', '12');
