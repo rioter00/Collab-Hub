@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 280.0, 375.0, 1178.0, 837.0 ],
+		"rect" : [ 395.0, 107.0, 1377.0, 837.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -83,7 +83,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -186,7 +186,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -306,13 +306,11 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-37",
-													"linecount" : 6,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 255.0, 236.0, 59.0, 89.0 ],
-													"text" : "start success dictionary u008003808"
+													"patching_rect" : [ 255.0, 236.0, 59.0, 89.0 ]
 												}
 
 											}
@@ -646,7 +644,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1041,7 +1039,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1733,7 +1731,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2287,7 +2285,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 516.166666666666742, 442.0, 50.0, 22.0 ],
-					"text" : "29"
+					"text" : "73"
 				}
 
 			}
@@ -2965,7 +2963,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3206,7 +3204,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 359.5, 177.0, 178.0, 22.0 ],
+					"patching_rect" : [ 359.5, 177.0, 117.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
@@ -3215,7 +3213,7 @@
 						"watch" : 0
 					}
 ,
-					"text" : "node.script max_collab_client.js"
+					"text" : "node.script Collab.js"
 				}
 
 			}
@@ -3433,7 +3431,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 316.0, -141.0, 50.0, 102.0 ],
-					"text" : "start success dictionary u281009846"
+					"text" : "stop success dictionary u990002346"
 				}
 
 			}
@@ -3453,13 +3451,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-32",
-					"linecount" : 8,
+					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 447.0, -101.0, 53.0, 116.0 ],
-					"text" : "\"Connecting to http://Remote-Collab.herokuapp.com:19795\""
+					"patching_rect" : [ 447.0, -101.0, 53.0, 49.0 ],
+					"text" : "\"val length: 73\""
 				}
 
 			}
@@ -3478,13 +3476,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-37",
-					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 542.75, -136.0, 210.0, 49.0 ],
-					"text" : "stdout \"Connecting to http://Remote-Collab.herokuapp.com:19795\""
+					"patching_rect" : [ 542.75, -136.0, 210.0, 22.0 ],
+					"text" : "stop success dictionary u990002346"
 				}
 
 			}

@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 56.0, 1170.0, 810.0 ],
+		"rect" : [ 34.0, 79.0, 1170.0, 810.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 44.0, 177.0, 96.0, 22.0 ],
+					"patching_rect" : [ 37.0, 177.0, 96.0, 22.0 ],
 					"text" : "route terminated"
 				}
 
@@ -66,7 +66,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 80.0, 296.0, 50.5, 22.0 ],
+					"patching_rect" : [ 118.0, 252.0, 50.5, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"parameter_enable" : 0,
@@ -84,7 +84,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 44.0, 266.0, 65.0, 22.0 ],
+					"patching_rect" : [ 37.0, 252.0, 65.0, 22.0 ],
 					"text" : "route error"
 				}
 
@@ -96,7 +96,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 44.0, 227.0, 65.0, 22.0 ],
+					"patching_rect" : [ 37.0, 216.0, 65.0, 22.0 ],
 					"text" : "route error"
 				}
 
@@ -168,7 +168,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 366.0, 117.0, 50.0, 102.0 ],
-					"text" : "npm success dictionary u921000605"
+					"text" : "npm success dictionary u736000813"
 				}
 
 			}
@@ -195,6 +195,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -253,7 +255,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 44.0, 141.0, 50.0, 49.0 ],
+					"patching_rect" : [ 37.0, 112.0, 50.0, 49.0 ],
 					"text" : "\"Connected to server\""
 				}
 
@@ -266,7 +268,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 116.0, 141.0, 50.0, 49.0 ],
+					"patching_rect" : [ 112.0, 112.0, 50.0, 49.0 ],
 					"text" : "stdout \"ready to roq\""
 				}
 
@@ -294,6 +296,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
