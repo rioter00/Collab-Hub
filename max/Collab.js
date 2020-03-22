@@ -82,7 +82,7 @@ socket.on('connect', () => {
 		  maxAPI.outlet(["event", header]);
 		});
 
-    socket.on('events', functions(events){
+    socket.on('events', function(events){
   	  console.log('lists of events: ' + events);
       maxAPI.outlet(["events", events]);
     })
