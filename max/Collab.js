@@ -17,7 +17,6 @@ const maxAPI = require('max-api'),
   socket = io.connect('http://remote-collab.herokuapp.com/');
 
 socket.on('connect', () => {
-	socket.emit('control', 'slider2', '13');
       maxAPI.outlet("Connected to server");
     });
 
@@ -28,10 +27,9 @@ socket.on('connect', () => {
 
 		// events
 
-		socket.on('inc', function(data) {
-		  console.log('inc ' + data);
-		  maxAPI.outlet(["inc", data]);
-		});
+    socket.on('connectionEstablishedGlobal', (data) => {
+      console.log("SERVER");
+    })
 
 		maxAPI.addHandler('control', (head, ...vals) => {
 		  const newControl = {
@@ -43,6 +41,10 @@ socket.on('connect', () => {
 		  console.log('sending control: ' + head + " - " + vals);
 		});
 
+    maxAPI.addHandler('clearControls', ()=>{
+      socket.emit('clearControls');
+		  console.log('clearControls called');
+    });
 
 		maxAPI.addHandler('getControl', (header) => {
 		  socket.emit('getControl', header);
@@ -63,6 +65,16 @@ socket.on('connect', () => {
 		  socket.emit('clearUsers');
 		  console.log('clearUsers called');
 		});
+
+    socket.on('serverMessage', ()=> {
+      console.log('Message from Server: ');
+      maxAPI.outlet(["serverMessage", "yes"]);
+    })
+
+    socket.on('serverMessage', function(data) {
+      console.log('Message from Server: ' + data);
+      maxAPI.outlet(["serverMessage", data]);
+    });
 
 		socket.on('users', function(data) {
 		  console.log('lists of users: ' + data);
