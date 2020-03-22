@@ -66,10 +66,6 @@ socket.on('connect', () => {
 		  console.log('clearUsers called');
 		});
 
-    socket.on('serverMessage', ()=> {
-      console.log('Message from Server: ');
-      maxAPI.outlet(["serverMessage", "yes"]);
-    })
 
     socket.on('serverMessage', function(data) {
       console.log('Message from Server: ' + data);
@@ -85,6 +81,11 @@ socket.on('connect', () => {
 		socket.on('event', function(header) {
 		  maxAPI.outlet(["event", header]);
 		});
+
+    socket.on('events', functions(events){
+  	  console.log('lists of events: ' + events);
+      maxAPI.outlet(["events", events]);
+    })
 
 		socket.on('control', function(head, vals) {
 		  console.log('control ' + head + " " + vals);

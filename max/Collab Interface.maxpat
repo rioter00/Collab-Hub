@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 517.0, 100.0, 1033.0, 703.0 ],
+		"rect" : [ 244.0, 145.0, 1110.0, 749.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,20 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-54",
+					"linecount" : 4,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 846.5, 218.0, 50.0, 62.0 ],
+					"presentation_linecount" : 4,
+					"text" : "\"clearing control list\""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-49",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -54,11 +68,14 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-48",
+					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 727.0, 233.0, 50.0, 22.0 ]
+					"patching_rect" : [ 727.0, 233.0, 50.0, 62.0 ],
+					"presentation_linecount" : 4,
+					"text" : "\"clearing control list\""
 				}
 
 			}
@@ -204,13 +221,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-32",
-									"linecount" : 2,
+									"linecount" : 4,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 367.0, 281.0, 81.0, 35.0 ],
-									"text" : "\"clearControls called\""
+									"patching_rect" : [ 367.0, 281.0, 81.0, 62.0 ],
+									"text" : "\"Message from Server: clearing control list\""
 								}
 
 							}
@@ -229,12 +246,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-37",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 462.75, 246.0, 172.25, 22.0 ],
-									"text" : "stdout \"clearControls called\""
+									"patching_rect" : [ 462.75, 246.0, 172.25, 35.0 ],
+									"text" : "stdout \"Message from Server: clearing control list\""
 								}
 
 							}
@@ -433,13 +451,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-31",
-					"linecount" : 6,
+					"linecount" : 7,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 335.0, 309.0, 50.0, 89.0 ],
-					"text" : "controlDump dictionary u157023095"
+					"patching_rect" : [ 335.0, 309.0, 50.0, 102.0 ],
+					"text" : "serverMessage \"clearing control list\""
 				}
 
 			}
@@ -4048,6 +4066,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-29", 1 ],
+					"order" : 0,
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-62", 0 ],
+					"order" : 1,
 					"source" : [ "obj-16", 0 ]
 				}
 
@@ -4329,6 +4356,13 @@
 					"destination" : [ "obj-51", 0 ],
 					"order" : 1,
 					"source" : [ "obj-62", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-54", 1 ],
+					"source" : [ "obj-62", 5 ]
 				}
 
 			}
