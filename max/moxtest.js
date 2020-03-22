@@ -1,56 +1,26 @@
-// --------------------------------------------------------------------------
-// This is the javascript required for interactive data retrieval from
-// the Max-based SocketIO (client).
-// --------------------------------------------------------------------------
-/* global $ */
-
-const io = require('socket.io-client');
-const http = require('http');
-const maxAPI = require("max-api");
-// const socket = io.connect('http://MoxSonicApp.herokuapp.com/');
-const socket = io.connect('http://Covid-Collab.herokuapp.com/');
-// const socket = io.connect('http://127.0.0.1/');
-// const socket = io.connect('http://angle-shooter.herokuapp.com/');
-
-// Add a connect listener 'connectionEstabilished' id: socket
-socket.on('connectionEstabilished-max', function (data) {
-  console.log('new connection-max');
-  maxAPI.outlet(["connected", data.id]);
+var url = 'http://Remote-Collab.herokuapp.com:19795';
+console.log('Connecting to ' + url);
+var io = require('socket.io-client');
+var socket = io.connect(url, { transports: ['websocket'], secure: false, reconnection: true, rejectUnauthorized: false });
+socket.on('connect_error', function(error){ console.log('Error connecting to ' + url, error);});
+socket.on('connect', function() {
+    console.log('Connected to ' + url);
 });
 
-socket.on('connectionEstabilishedGlobal', function (data) {
-  console.log('new connectionGlobal');
-  maxAPI.outlet(["connected", data.id]);
+
+var https = require('https');
+var options = { host: 'http://Remote-Collab.herokuapp.com',
+    port: '19795',
+    path: '/socket.io/?EIO=3&transport=polling&t=1404103832354-0&b64=1',
+    method: 'GET',
+    headers:
+    { 'User-Agent': 'node-XMLHttpRequest',
+    Accept: '*/*',
+    Host: 'http://Remote-Collab.herokuapp.co:19795' },
+    agent: false
+};
+https.globalAgent.options.rejectUnauthorized = false;
+https.request(options, function() {
+    console.log(arguments);
+    throw 'done';
 });
-
-socket.on('inc', function (data) {
-  console.log('inc ' + data);
-  maxAPI.outlet(["inc", data]);
-});
-
-socket.on('dec', function (data) {
-  console.log('dec ' + data);
-  maxAPI.outlet(["dec", data]);
-});
-
-//
-
-
-socket.on('decreaseTempo', function (data) {
-  console.log('decreaseTempo');
-  maxAPI.outlet(["tempo", "up"]);
-});
-
-socket.on('increaseTempo', function (data) {
-  console.log('increaseTempo');
-  maxAPI.outlet(["tempo", "down"]);
-});
-
-//
-
-socket.on('spawnCollectible', function() {
-  console.log('spawnCollectible');
-  maxAPI.outlet(['spawnCollectible']);
-});
-
-console.log("ready to roq");

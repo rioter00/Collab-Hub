@@ -1,0 +1,27 @@
+npm ERR! code EJSONPARSE
+npm ERR! file /Users/nickhwang/Documents/GitHub/Covid-Collab/max/package.json
+npm ERR! JSON.parse Cannot parse {
+npm ERR! JSON.parse   "name": "node-max-collab",
+npm ERR! JSON.parse   "version": "0.0.0",
+npm ERR! JSON.parse   "scripts": {
+npm ERR! JSON.parse     "start": "node max_socketIO-client.js", "node pooptest.js"
+npm ERR! JSON.parse   },
+npm ERR! JSON.parse   "dependencies": {
+npm ERR! JSON.parse     "audit": "0.0.6",
+npm ERR! JSON.parse     "body-parser": "^1.19.0",
+npm ERR! JSON.parse     "cookie-parser": "~1.4.3",
+npm ERR! JSON.parse     "debug": "~2.6.3",
+npm ERR! JSON.parse     "ejs": "~2.5.6",
+npm ERR! JSON.parse     "express": "^4.17.1",
+npm ERR! JSON.parse     "serve-favicon": "~2.4.2",
+npm ERR! JSON.parse     "socket.io": "^2.1.1",
+npm ERR! JSON.parse     "socket.io-client": "^2.3.0",
+npm ERR! JSON.parse     "ws": "^4.0.0"
+npm ERR! JSON.parse   }
+npm ERR! JSON.parse }
+npm ERR! JSON.parse 
+npm ERR! JSON.parse Failed to parse package.json data.
+npm ERR! JSON.parse package.json must be actual JSON, not just JavaScript.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/nickhwang/.npm/_logs/2020-03-22T07_31_09_245Z-debug.log

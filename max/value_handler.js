@@ -2,7 +2,7 @@
 
 var myval=0;
 
-outlets = 1;
+outlets = 2;
 
 if (jsarguments.length>1)
 	myval = jsarguments[1];
@@ -40,4 +40,8 @@ function dictionary(data)
 	post(data + "\n");
 	myval = data;
 	bang();
+}
+
+function noHeader(){
+	outlet(1, '-err, no control header, yet');
 }

@@ -15,8 +15,8 @@
   "author": "nick-hwang",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.15.2",
-    "socket.io": "^2.1.1",
+    "express": "^4.17.1",
+    "socket.io": "^2.1.1"
     "path": "^0.12.7"
 
   },
