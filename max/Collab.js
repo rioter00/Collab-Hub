@@ -40,6 +40,11 @@ socket.on('connect', () => {
       console.log('getList of Events');
     })
 
+    maxAPI.addHandler('clearEvents', () => {
+      socket.emit('clearEvents');
+      console.log('clearing list of Events');
+    })
+
 
 		maxAPI.addHandler('control', (head, ...vals) => {
 		  const newControl = {
