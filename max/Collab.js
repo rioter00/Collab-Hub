@@ -1,16 +1,10 @@
 // --------------------------------------------------------------------------
 // This is the javascript required for interactive data retrieval from
 // the Max-based SocketIO (client).
+// Authors: Nick Hwang, Tony T Marasco, Eric Sheffield
+//
 // --------------------------------------------------------------------------
-/* global $ */
 
-// const io = require('socket.io-client');
-// // const http = require('http');
-// const maxAPI = require("max-api");
-// // const socket = io.connect('http://MoxSonicApp.herokuapp.com/');
-// // const socket = io.connect('http://127.0.0.1/');
-// // const socket = io.connect('http://Covid-Collab.herokuapp.com/');
-// // const socket = io.connect('https://noderemoteworkshop.herokuapp.com/');
 
 const maxAPI = require('max-api'),
   io = require('socket.io-client'),
@@ -33,6 +27,7 @@ socket.on('connect', () => {
     maxAPI.addHandler('event', (header) => {
       socket.emit('event', header);
       console.log('event sent: ' + header);
+      maxAPI.outlet(["event", header]);
     })
 
     maxAPI.addHandler('getEvents', () => {
