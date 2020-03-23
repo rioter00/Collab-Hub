@@ -20,7 +20,6 @@ socket.on('connect', () => {
       maxAPI.outlet("Connected to server");
     });
 
-
 		socket.on('connect', () => {
 		  maxAPI.outlet("connected");
 		});
@@ -30,6 +29,17 @@ socket.on('connect', () => {
     socket.on('connectionEstablishedGlobal', (data) => {
       console.log("SERVER");
     })
+
+    maxAPI.addHandler('event', (header) => {
+      socket.emit('event', header);
+      console.log('event sent: ' + header);
+    })
+
+    maxAPI.addHandler('getEvents', () => {
+      socket.emit('getEvents');
+      console.log('getList of Events');
+    })
+
 
 		maxAPI.addHandler('control', (head, ...vals) => {
 		  const newControl = {
@@ -66,7 +76,6 @@ socket.on('connect', () => {
 		  console.log('clearUsers called');
 		});
 
-
     socket.on('serverMessage', function(data) {
       console.log('Message from Server: ' + data);
       maxAPI.outlet(["serverMessage", data]);
@@ -78,7 +87,8 @@ socket.on('connect', () => {
 		  maxAPI.outlet(["users", data]);
 		});
 
-		socket.on('event', function(header) {
+		socket.on('event', function(header){
+      console.log('received event: ' + header);
 		  maxAPI.outlet(["event", header]);
 		});
 
