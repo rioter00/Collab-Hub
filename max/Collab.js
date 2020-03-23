@@ -35,6 +35,7 @@ maxAPI.addHandler('clearEvents', () => {
 
 
 maxAPI.addHandler('control', (head, ...vals) => {
+  console.log("val length: " + vals.length);
   const newControl = {
     header: head,
     values: vals
