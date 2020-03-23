@@ -992,13 +992,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-32",
-									"linecount" : 2,
+									"linecount" : 12,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 367.0, 281.0, 81.0, 35.0 ],
-									"text" : "\"clearing list of Events\""
+									"patching_rect" : [ 367.0, 281.0, 81.0, 169.0 ],
+									"text" : "\"sending control: multi1 - 0.506666660308838,0.426666676998138,-0.026666667312384,-0.053333334624767,0.293333321809769\""
 								}
 
 							}
@@ -1017,12 +1017,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-37",
+									"linecount" : 6,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 462.75, 246.0, 172.25, 22.0 ],
-									"text" : "stdout \"clearing list of Events\""
+									"patching_rect" : [ 462.75, 246.0, 172.25, 89.0 ],
+									"text" : "stdout \"sending control: multi1 - 0.506666660308838,0.426666676998138,-0.026666667312384,-0.053333334624767,0.293333321809769\""
 								}
 
 							}
@@ -4111,7 +4112,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 8.25, 6.0, 317.0, 33.0 ],
-					"text" : "Covid Collab Engine",
+					"text" : "Remote Collab Engine",
 					"underline" : 1
 				}
 
