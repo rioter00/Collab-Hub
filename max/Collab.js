@@ -23,6 +23,12 @@ maxAPI.addHandler('event', (header) => {
   maxAPI.outlet(["event", header]);
 })
 
+maxAPI.addHandler('chat', (data) => {
+  socket.emit('chat', data);
+  console.log('chat sent: ' + data);
+})
+
+
 maxAPI.addHandler('getEvents', () => {
   socket.emit('getEvents');
   console.log('getList of Events');
@@ -69,6 +75,11 @@ maxAPI.addHandler('clearUsers', () => {
   socket.emit('clearUsers');
   console.log('clearUsers called');
 });
+
+socket.on('chat', function(data){
+  console.log('chat message received');
+  maxAPI.outlet(["chat", data]);
+})
 
 socket.on('serverMessage', function(data) {
   console.log('Message from Server: ' + data);
