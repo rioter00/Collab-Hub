@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -38,6 +38,18 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-66",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 702.0, 1699.666699647903442, 74.0, 47.0 ],
+					"text" : "Currently, resolution is 16 x 16"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-49",
 					"maxclass" : "message",
@@ -695,7 +707,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -929,7 +941,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2501,7 +2513,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3587,7 +3599,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3932,7 +3944,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4243,7 +4255,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4335,21 +4347,21 @@
 												"filekind" : "audiofile",
 												"loop" : 1,
 												"content_state" : 												{
-													"timestretch" : [ 0 ],
-													"formantcorrection" : [ 0 ],
-													"formant" : [ 1 ],
-													"originallength" : [ 0, "ticks" ],
-													"slurtime" : [ 0 ],
-													"originaltempo" : [ 120 ],
-													"mode" : [ "basic" ],
-													"basictuning" : [ 440 ],
-													"pitchshift" : [ 1 ],
-													"speed" : [ 1 ],
+													"play" : [ 0 ],
 													"pitchcorrection" : [ 0 ],
 													"followglobaltempo" : [ 0 ],
+													"pitchshift" : [ 1 ],
+													"timestretch" : [ 0 ],
+													"formantcorrection" : [ 0 ],
 													"originallengthms" : [ 0 ],
+													"mode" : [ "basic" ],
+													"originallength" : [ 0, "ticks" ],
+													"formant" : [ 1 ],
+													"originaltempo" : [ 120 ],
 													"quality" : [ "basic" ],
-													"play" : [ 0 ],
+													"speed" : [ 1 ],
+													"basictuning" : [ 440 ],
+													"slurtime" : [ 0 ],
 													"pitchshiftcent" : [ 0 ]
 												}
 
@@ -4360,21 +4372,21 @@
 												"filekind" : "audiofile",
 												"loop" : 1,
 												"content_state" : 												{
-													"timestretch" : [ 0 ],
-													"formantcorrection" : [ 0 ],
-													"formant" : [ 1 ],
-													"originallength" : [ 0, "ticks" ],
-													"slurtime" : [ 0 ],
-													"originaltempo" : [ 120 ],
-													"mode" : [ "basic" ],
-													"basictuning" : [ 440 ],
-													"pitchshift" : [ 1 ],
-													"speed" : [ 1 ],
+													"play" : [ 0 ],
 													"pitchcorrection" : [ 0 ],
 													"followglobaltempo" : [ 0 ],
+													"pitchshift" : [ 1 ],
+													"timestretch" : [ 0 ],
+													"formantcorrection" : [ 0 ],
 													"originallengthms" : [ 0 ],
+													"mode" : [ "basic" ],
+													"originallength" : [ 0, "ticks" ],
+													"formant" : [ 1 ],
+													"originaltempo" : [ 120 ],
 													"quality" : [ "basic" ],
-													"play" : [ 0 ],
+													"speed" : [ 1 ],
+													"basictuning" : [ 440 ],
+													"slurtime" : [ 0 ],
 													"pitchshiftcent" : [ 0 ]
 												}
 
@@ -4385,21 +4397,21 @@
 												"filekind" : "audiofile",
 												"loop" : 0,
 												"content_state" : 												{
-													"timestretch" : [ 0 ],
-													"formantcorrection" : [ 0 ],
-													"formant" : [ 1 ],
-													"originallength" : [ 0, "ticks" ],
-													"slurtime" : [ 0 ],
-													"originaltempo" : [ 120 ],
-													"mode" : [ "basic" ],
-													"basictuning" : [ 440 ],
-													"pitchshift" : [ 1 ],
-													"speed" : [ 1 ],
+													"play" : [ 0 ],
 													"pitchcorrection" : [ 0 ],
 													"followglobaltempo" : [ 0 ],
+													"pitchshift" : [ 1 ],
+													"timestretch" : [ 0 ],
+													"formantcorrection" : [ 0 ],
 													"originallengthms" : [ 0 ],
+													"mode" : [ "basic" ],
+													"originallength" : [ 0, "ticks" ],
+													"formant" : [ 1 ],
+													"originaltempo" : [ 120 ],
 													"quality" : [ "basic" ],
-													"play" : [ 0 ],
+													"speed" : [ 1 ],
+													"basictuning" : [ 440 ],
+													"slurtime" : [ 0 ],
 													"pitchshiftcent" : [ 0 ]
 												}
 
@@ -5223,7 +5235,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5673,7 +5685,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5837,7 +5849,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -7090,7 +7102,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -7183,6 +7195,8 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 0,
 										"defer" : 0,
+										"node_bin_path" : "",
+										"npm_bin_path" : "",
 										"watch" : 0
 									}
 ,
@@ -7343,8 +7357,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -7438,7 +7450,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -9135,9 +9147,9 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-365::obj-4::obj-20" : [ "live.tab[1]", "live.tab[1]", 0 ],
 			"obj-365::obj-4::obj-18" : [ "number[1]", "number[1]", 0 ],
 			"obj-365::obj-4::obj-21" : [ "number", "number", 0 ],
+			"obj-365::obj-4::obj-20" : [ "live.tab[1]", "live.tab[1]", 0 ],
 			"parameterbanks" : 			{
 
 			}
