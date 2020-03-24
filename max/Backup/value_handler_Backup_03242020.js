@@ -9,6 +9,7 @@ if (jsarguments.length>1)
 
 function bang()
 {
+	outlets = 6;
 	outlet(0, myval);
 }
 
@@ -36,13 +37,9 @@ function list()
 
 function dictionary(data)
 {
-	// set incoming data as dict
-	var newDict = new Dict(data);
-	// if chat, parse for id and chat message
-	if(newDict.contains("chat")){
-		outlet(0, 'id', newDict.get('id'));
-		outlet(0, 'chat', newDict.get('chat'));
-	}
+	post(data + "\n");
+	myval = data;
+	bang();
 }
 
 function noHeader(){
