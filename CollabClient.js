@@ -102,6 +102,11 @@ socket.on('events', function(events) {
   maxAPI.outlet(["events", events]);
 })
 
+// socket.on('seconds', (data) => {
+//   console.log('seconds logged?');
+//   // maxAPI(outl)
+// })
+
 socket.on('control', function(head, vals) {
   console.log('control ' + head + " " + vals);
   // use spread operator regardless if single or multiple datum.
