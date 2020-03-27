@@ -76,6 +76,10 @@ maxAPI.addHandler('clearUsers', () => {
   console.log('clearUsers called');
 });
 
+maxAPI.addHandler('setServerConsole', (val) =>{
+  socket.emit('setConsoleDisplay', val);
+});
+
 socket.on('chat', function(data){
   console.log('chat message received');
   maxAPI.outlet(["chat", data]);
