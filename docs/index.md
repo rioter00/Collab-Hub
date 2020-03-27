@@ -31,9 +31,9 @@ You can skip ahead to the Max portion, if you wish. :-)
 
 Server is located at [https://remote-collab.herokuapp.com](https://remote-collab.herokuapp.com)
 
-Connection to the server through socket.io happens automatically. Each client is registered and array of all connected clients (by socket id) are sent to all other connected clients, with a header `'users'`.
+Connection to the server through socket.io happens automatically. Each client is registered, and an array of all connected clients (by socket id) is sent to all other connected clients, with an event `'users'`.
 
-### Send Data
+### Data
 Server accepts most data-related messages in a <command> <header> <value> syntax.
 
 
@@ -44,18 +44,25 @@ Commands sent to server are wrapped in Node.JS event system. Here are a couple u
 **Send Control Data**
 
 	control [headername] [value1] ([value2] etc...)
-	Example: control slider1 .5
-	JS Example: 
+	
+Example: 
+
+	control slider1 .5
+
+JS Example: 
+
 	socket.emit('control', {'header': slider1, 'values': .5});
 
 > The size of the values set is can be one or more. More information on requesting/receiving data later in the section.
 
 > Headers can formatted with OSC style slashing.
 
-	Example: control nick/slider1 .5
-	Example2: control nick/multislider1 .2 0 .8 1.0 .13
+Examples: 
 
-Some things happen when new control headers arrive at the server...
+	control nick/slider1 .5
+	control nick/multislider1 .2 0 .8 1.0 .13
+
+Some things happen when new control headers arrive at the server. The server...
 
 - Registers the new header
 - Sends a JSON Object of the entire list of available headers and the latest set of values to connected clients, with `'controlDump'` event.
@@ -75,7 +82,9 @@ Examples:
 
 	getControl slider1
 	
-	JS Example: socket.emit('getControl', 'slider1');
+JS Example: 
+
+	socket.emit('getControl', 'slider1');
 
 	
 
