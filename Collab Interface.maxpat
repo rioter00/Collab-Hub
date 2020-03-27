@@ -147,7 +147,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-186",
-					"items" : "/nickhwang/xySlider",
+					"items" : [ "/nickhwang/xySlider", ",", "multi1" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -372,7 +372,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-25",
-									"items" : "/nickhwang/xySlider",
+									"items" : [ "/nickhwang/xySlider", ",", "multi1" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -576,7 +576,7 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-62",
-													"items" : "/nickhwang/xySlider",
+													"items" : [ "/nickhwang/xySlider", ",", "multi1" ],
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -898,7 +898,7 @@
 													"numoutlets" : 4,
 													"outlettype" : [ "list", "", "", "" ],
 													"patching_rect" : [ 97.25, 251.0, 218.0, 188.0 ],
-													"rows" : 1
+													"rows" : 2
 												}
 
 											}
@@ -941,7 +941,7 @@
 												"box" : 												{
 													"activecolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 1.0 ],
 													"bgcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
-													"disabled" : [ 0 ],
+													"disabled" : [ 0, 0 ],
 													"elementcolor" : [ 0.607843137254902, 0.47843137254902, 0.47843137254902, 1.0 ],
 													"id" : "obj-1",
 													"itemtype" : 1,
@@ -951,9 +951,9 @@
 													"offset" : 18,
 													"outlettype" : [ "" ],
 													"parameter_enable" : 0,
-													"patching_rect" : [ 72.0, 251.0, 18.0, 20.0 ],
-													"size" : 1,
-													"values" : [ 0 ]
+													"patching_rect" : [ 72.0, 251.0, 18.0, 38.0 ],
+													"size" : 2,
+													"values" : [ 0, 0 ]
 												}
 
 											}
@@ -1372,7 +1372,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-92",
-									"items" : "/nickhwang/xySlider",
+									"items" : [ "/nickhwang/xySlider", ",", "multi1" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -4199,7 +4199,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 556.0, 1290.25, 279.0, 23.0 ],
-					"text" : "mouseidle 0.460177 0.981195 0 0 0 0 0 0"
+					"text" : "mouseidle 0.19469 0.870575 0 0 0 0 0 0"
 				}
 
 			}
@@ -7789,7 +7789,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-25",
-									"items" : "/nickhwang/xySlider",
+									"items" : [ "/nickhwang/xySlider", ",", "multi1" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -7993,7 +7993,7 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-62",
-													"items" : "/nickhwang/xySlider",
+													"items" : [ "/nickhwang/xySlider", ",", "multi1" ],
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -8315,7 +8315,7 @@
 													"numoutlets" : 4,
 													"outlettype" : [ "list", "", "", "" ],
 													"patching_rect" : [ 97.25, 251.0, 218.0, 188.0 ],
-													"rows" : 1
+													"rows" : 2
 												}
 
 											}
@@ -8358,7 +8358,7 @@
 												"box" : 												{
 													"activecolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 1.0 ],
 													"bgcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
-													"disabled" : [ 0 ],
+													"disabled" : [ 0, 0 ],
 													"elementcolor" : [ 0.607843137254902, 0.47843137254902, 0.47843137254902, 1.0 ],
 													"id" : "obj-1",
 													"itemtype" : 1,
@@ -8368,9 +8368,9 @@
 													"offset" : 18,
 													"outlettype" : [ "" ],
 													"parameter_enable" : 0,
-													"patching_rect" : [ 72.0, 251.0, 18.0, 20.0 ],
-													"size" : 1,
-													"values" : [ 0 ]
+													"patching_rect" : [ 72.0, 251.0, 18.0, 38.0 ],
+													"size" : 2,
+													"values" : [ 0, 0 ]
 												}
 
 											}
@@ -8789,7 +8789,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-92",
-									"items" : "/nickhwang/xySlider",
+									"items" : [ "/nickhwang/xySlider", ",", "multi1" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -8836,7 +8836,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 236.0, 372.0, 50.0, 22.0 ],
-									"text" : "1"
+									"text" : "2"
 								}
 
 							}
