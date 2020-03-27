@@ -110,7 +110,7 @@ socket.on('events', function(events) {
 socket.on('control', function(head, vals) {
   console.log('control ' + head + " " + vals);
   // use spread operator regardless if single or multiple datum.
-  console.log('val length: ' + vals);
+  // console.log('val length: ' + vals);
   if (vals == null || vals == 'undefined') {
     console.log('header undefined');
     maxAPI.outlet(["control", head, "noHeader"]);

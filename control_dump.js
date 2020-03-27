@@ -1,4 +1,4 @@
-
+// gets dictionary -- returns all headers
 
 var myval=0;
 
@@ -14,10 +14,16 @@ function bang()
 
 function dictionary(data)
 {
+	post("getting dict" + "\n");
 	var oldDict = new Dict(data);
-	var controllength = oldDict.get("array").length;
+
+	post(oldDict.getsize("array") + "\n");
+
+	var controllength = oldDict.getsize("array") ;
+	// post(oldDict.get("array").length);
+	post("controllength " + controllength + "\n");
 	outlet(1, controllength);
-	outlet(0, "clear");
+	outlet(0, 'clear', 'all');
 	for(i = 0; i < controllength; i++){
 		var s = [];
 		// why doesn't max's js allow for modern concatentating and for loops??
@@ -34,6 +40,7 @@ function dictionary(data)
 		outlet(0, s);
 	}
 }
+
 
 function noHeader(){
 	outlet(1, '-err, no control header, yet');

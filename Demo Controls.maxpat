@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 0,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 168.0, 149.0, 1158.0, 678.0 ],
+		"rect" : [ 310.0, 235.0, 1522.0, 829.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,28 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
+					"fontface" : 1,
+					"hint" : "",
+					"id" : "obj-5",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 22.0, 9.0, 20.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 459.0, 240.0, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "1",
+					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
 					"fontface" : 1,
@@ -71,7 +93,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 0,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -124,7 +146,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 249.0, 294.0, 237.0, 22.0 ],
-									"text" : "62"
+									"text" : "69"
 								}
 
 							}
@@ -163,8 +185,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 233.0, 117.0, 49.0 ],
-									"text" : "array[0]::values 62"
+									"patching_rect" : [ 50.0, 233.0, 117.0, 22.0 ],
+									"text" : "array[1]::values 69"
 								}
 
 							}
@@ -269,7 +291,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 909.5, 100.0, 152.0, 22.0 ],
+					"patching_rect" : [ 909.5, 100.0, 191.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -277,7 +299,7 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p getValuesFromDictionary"
+					"text" : "p getValuesFromControlDictionary"
 				}
 
 			}
@@ -291,14 +313,14 @@
 					"patching_rect" : [ 909.5, 149.0, 274.5, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 909.0, 151.0, 30.0, 22.0 ],
-					"text" : "62"
+					"text" : "69"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-79",
-					"items" : [ "drunkInt", ",", "/tony/bendy", ",", "slider1", ",", "slider2" ],
+					"items" : [ "video1", ",", "drunkInt", ",", "/tony/bendy" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -571,7 +593,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 0,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -638,7 +660,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 276.25, 304.0, 50.0, 22.0 ],
-									"text" : "4"
+									"text" : "3"
 								}
 
 							}
@@ -1050,7 +1072,7 @@
 					"patching_rect" : [ 303.75, 18.5, 197.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1159.0, 612.5, 207.0, 24.0 ],
-					"text" : "Using Dumps and Dicts"
+					"text" : "Demo Controls"
 				}
 
 			}
@@ -1088,13 +1110,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 0,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 84.0, 129.0, 640.0, 480.0 ],
+						"rect" : [ 68.0, 244.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1123,6 +1145,18 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 57.0, 118.0, 50.0, 22.0 ],
+									"text" : "2"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-1",
 									"index" : 1,
@@ -1141,7 +1175,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 249.0, 294.0, 237.0, 22.0 ],
-									"text" : "62"
+									"text" : "0.519685"
 								}
 
 							}
@@ -1176,12 +1210,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-94",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 233.0, 117.0, 49.0 ],
-									"text" : "array[0]::values 62"
+									"patching_rect" : [ 50.0, 233.0, 117.0, 35.0 ],
+									"text" : "array[2]::values 0.519685"
 								}
 
 							}
@@ -1278,7 +1313,16 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-5", 1 ],
+									"order" : 1,
+									"source" : [ "obj-98", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-96", 0 ],
+									"order" : 0,
 									"source" : [ "obj-98", 0 ]
 								}
 
@@ -1286,7 +1330,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 604.0, 100.0, 152.0, 22.0 ],
+					"patching_rect" : [ 604.0, 100.0, 191.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1294,7 +1338,7 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p getValuesFromDictionary"
+					"text" : "p getValuesFromControlDictionary"
 				}
 
 			}
@@ -1307,15 +1351,16 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 604.0, 149.0, 274.5, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1062.0, 211.0, 29.5, 22.0 ],
-					"text" : "62"
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 1062.0, 211.0, 29.5, 49.0 ],
+					"text" : "0.519685"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-92",
-					"items" : [ "drunkInt", ",", "/tony/bendy", ",", "slider1", ",", "slider2" ],
+					"items" : [ "video1", ",", "drunkInt", ",", "/tony/bendy" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1419,7 +1464,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 0,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1632,7 +1677,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 0,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1866,7 +1911,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 0,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2308,7 +2353,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 3,
 					"presentation_rect" : [ 37.0, 52.0, 106.0, 49.0 ],
-					"text" : "controlDump dictionary u688083312"
+					"text" : "controlDump dictionary u629007742"
 				}
 
 			}
@@ -2337,6 +2382,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -2685,14 +2732,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "CollabClient.js",
-				"bootpath" : "~/Documents/GitHub/Covid-Collab",
+				"bootpath" : "~/Documents/GitHub/Remote-Collab-Client",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "value_handler.js",
-				"bootpath" : "~/Documents/GitHub/Covid-Collab",
+				"bootpath" : "~/Documents/GitHub/Remote-Collab-Client",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1

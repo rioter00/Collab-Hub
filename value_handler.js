@@ -14,14 +14,14 @@ function bang()
 
 function msg_int(v)
 {
-	post("received int " + v + "\n");
+	// post("received int " + v + "\n");
 	myval = v;
 	bang();
 }
 
 function msg_float(v)
 {
-	post("received float " + v + "\n");
+	// post("received float " + v + "\n");
 	myval = v;
 	bang();
 }
@@ -29,7 +29,7 @@ function msg_float(v)
 function list()
 {
 	var a = arrayfromargs(arguments);
-	post("received list " + a.length + "\n");
+	// post("received list " + a.length + "\n");
 	myval = a;
 	bang();
 }

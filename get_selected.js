@@ -1,4 +1,5 @@
 
+outlets = 2;
 
 var myval=0;
 
@@ -12,7 +13,7 @@ function bang()
 
 function msg_int(v)
 {
-	post("received int " + v + "\n");
+	// post("received int " + v + "\n");
 	myval = v;
 	bang();
 }
@@ -21,7 +22,7 @@ function list()
 {
 	var l = arrayfromargs(arguments);
 
-	post("received list " + l + "\n");
+	// post("received list " + l + "\n");
 
 	for(i = 0; i < l.length; i++){
 		var terms =[];
@@ -34,6 +35,7 @@ function list()
 			terms.push(i);
 			outlet(0, terms);
 		}
+		outlet(1, 1);
 	}
 	// send out list of selected
 	// outlet(0, selected);
