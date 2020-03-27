@@ -35,10 +35,15 @@ Server accepts most data-related messages in a <command> <header> <value> syntax
 #### Available Commands:
 Send Control Data
 
-control [headername] [value1] ([value2] etc...)
+	control [headername] [value1] ([value2] etc...)
 
-Example: `control slider1 .5`
+	Example: control slider1 .5
 
 
+Headers can formatted with OSC style slashing.
+
+	Example: control nick/slider1 .5
+	
+	
 
 
