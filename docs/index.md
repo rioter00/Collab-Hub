@@ -6,7 +6,6 @@ Source: [https://github.com/rioter00/Collab-Hub](https://github.com/rioter00/Col
 Authors: Nick Hwang (nickthwang@gmail.com)
 Support: Eric Sheffield, Tony Marasco
 
-
 {{TOC}}
 
 ---
@@ -86,6 +85,84 @@ JS Example:
 
 	socket.emit('getControl', 'slider1');
 
-	
+---
 
+### 'Events'
+
+Events are different than the JS/Node context. For the purposes of Collab-Hub, (capital-E) Events relate to instantaneous occurrences, like button presses, section changes (although you could use section values too), start/stop signifiers, etc.
+
+Events use a different but similar syntax. Events are stored on the server as an array. The array is sent to all connected clients whenever a new event is sent to the server. All events (currently) are sent to all connected clients. 
+
+#### Send an Event to the server
+Syntax
+
+	event [header]
+
+Example
+
+	event button1
+
+JS Example
+
+	socket.emit('event', 'button1');
+
+
+#### Receive/Listen for an event from the server
+*You cannot request an event. You just have to be listening for an event. The syntax is similar to send an Event.*
+
+Syntax
+
+	event [header]
+
+Example
+
+	event button1
+
+JS Example 
+
+	socket.on('event', (header) => {
+		if(header == 'button1'){
+			// do something
+		}
+	});
+
+--- 
+### User Related Data
+When a new user connects, they are automatically added to a 'users' array. The users array holds clients' socket ids. Disconnected users are removed. 
+
+New clients are automatically sent a list of all connected users. 
+
+#### Receive/Listen for user list
+
+Listen for 'users' event and accept an array of Objects `{id: [id], username: [username]}`.
+
+JS Example
+
+	socket.on('users', (usersArray) => {
+		for(let user of usersArray){
+			if(user.username != ''){
+				console.log(user.username);
+			} else {
+				console.log(user.id);
+			}
+		}
+	});
+
+
+#### Update your user information with your name
+Users can add a name to their id. The server will match your socket id within the users array and add a value to the 'username' id. 
+
+Event/Command syntax
+
+	addUsername [username]
+
+Example
+
+	addUsername TonyToneT
+
+JS Example
+
+	  socket.emit('addUsername', 'TonyToneT');
+
+ 
 
