@@ -26,14 +26,14 @@ The Max Client patch is called 'Collab Client' in the [source package](https://g
 
 
 ### Node Max and NPM
-![NPM](/images/1 - npm.png)
+![NPM](/images/1-npm.png)
 Our server and the client patch use [Node.JS](https://www.w3schools.com/nodejs/nodejs_events.asp). Node allows us to use any number of available code libraries as well as web connectivity. Designers can decide that their code needs a certain code library/module-- but instead of including those needed files, Node allows the end-user to use Node Package Manager (NPM) to download need packages/modules/libraries. This does a number of good things including reducing bloat and allows users to download the needed/most up-to-date version.
 
 It's a good idea to download the needed packages, especially the first time you're using the patch.
 
 1. Click the button next to '1' to run the Node Package Manager on the patch.
 
-![npm complete](/images/1 - npm complete.png)
+![npm complete](/images/1-npm_complete.png)
 
 You should see, in the Max Console, `completed` after NPM has successfully updated the modules. You can see the downloaded modules in the 'modules' folder.
 
