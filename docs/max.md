@@ -27,15 +27,25 @@ The Max Client patch is called 'Collab Client' in the [source package](https://g
 
 ### Node Max and NPM
 ![NPM](/docs/images/1-npm.png)
-Our server and the client patch use [Node.JS](https://www.w3schools.com/nodejs/nodejs_events.asp). Node allows us to use any number of available code libraries as well as web connectivity. Designers can decide that their code needs a certain code library/module-- but instead of including those needed files, Node allows the end-user to use Node Package Manager (NPM) to download need packages/modules/libraries. This does a number of good things including reducing bloat and allows users to download the needed/most up-to-date version.
+Our server and the client patch use [Node.JS](https://www.w3schools.com/nodejs/nodejs_events.asp). Node allows us to use any number of available code libraries as well as web connectivity. Designers can decide that their code needs a certain code library/module-- but instead of including those needed files, Node allows the end-user to use [Node Package Manager](https://www.w3schools.com/nodejs/nodejs_npm.asp) (NPM) to download need packages/modules/libraries. This does a number of good things including reducing bloat and allows users to download the needed/most up-to-date version.
 
 It's a good idea to download the needed packages, especially the first time you're using the patch.
 
-1. Click the button next to '1' to run the Node Package Manager on the patch.
+1. Click the button next to the '1' to run the Node Package Manager on the patch.
 
 ![npm complete](/docs/images/1-npm_complete.png)
 
 You should see, in the Max Console, `completed` after NPM has successfully updated the modules. You can see the downloaded modules in the 'modules' folder.
+
+---
+## Start Script and Connection Confirmation
+This patch uses set of code written in JavaScript which interacts with Node.JS and NodeForMax. 
+
+![node script](/docs/images/2-client_script.png)
+
+Part of that code establishes a connection to the server. The rest of the code describes the rest of the interaction with the server, including sending/receiving data, other connected data, and Events. Click the `'Start Script'` button, which starts the client script. You should see the `[toggle] `object turn true once the connection with the server is established. 
+
+If you double click the `[node.script CollabClient.js]` object to look at the client code. 
 
 
 ## Data
