@@ -78,6 +78,18 @@ You can also request the list of all connected with
 
 	getUsers
 
+If you request with getUsers, the server will send the response with a 'users' header followed by an array of Objects: 
+
+Example
+	
+	users 	[
+	{'id': [socketid], 'username': [username], 
+	'id': [socketid], 'username': [username],
+	'id': [socketid], 'username': [username]}
+	]
+
+
+
 You can clear the array of all connect clients on the server. Please use this with caution, as this clears the user list on the server.
 
 	clearUsers
