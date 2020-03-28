@@ -170,9 +170,28 @@ This sends a single request to the server, which will in turn only respond once.
 ## 9. Receiving Data
 When receiving data, you will continue to use route (or osc-route) the requested headers. 
 
-I'm using an additional js script to help handle incoming values (which, remember, maybe one value or multiple values). The [value_handler.js](/value_handler.js) also receives an alert from the server if you request a non-existent header by throwing an error message from its right outlet.
+I'm using an additional js script to help handle incoming values (which, remember, maybe one value or multiple values). The [value_handler.js](https://github.com/rioter00/Collab-Hub/blob/master/value_handler.js) also receives an alert from the server if you request a non-existent header by throwing an error message from its right outlet.
 
 ![receiving data](/docs/images/9-receiving_data.png)
+
+## 10. Dumps
+The servers stores connected users, control data, and Events as arrays. Whenever there's a change to a collection, the server automatically dumps the entire array to all connect clients. 
+
+To receive the dumps, route server messages like so
+
+For control data:
+
+	controlDump [dictionary]
+	
+For user lists:
+
+	controlDump [dictionary]
+
+For Events:
+
+	events [dictionary]
+	
+![dumps](/docs/images/10-dumps)
 
 ## Data
 Server accepts most data-related messages in a <command> <header> <value> syntax.
