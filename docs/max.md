@@ -78,7 +78,7 @@ You can also request the list of all connected with
 
 	getUsers
 
-If you request with getUsers, the server will send the response with a 'users' header followed by an array of Objects: 
+If you request with `getUsers`, the server will send the response with a 'users' header followed by an array of Objects: 
 
 Example
 	
@@ -104,6 +104,38 @@ Incoming chat messages from the server follow this syntax
 	chat [Chat Message]
 
 ![chat](/docs/images/5-chat.png)
+
+## 6. Sending Data, naming headers
+The heart of this tool is to be able to send data to the server, which in turn, will send to other connected clients who are interested in that data.
+
+#### Control Data
+
+The server can receive single values (int, float, or any number of values). 
+
+The syntax when sending data
+
+	control [header] 
+	
+Example
+
+	control slider1 .5
+
+#### 6. Events
+
+Events for Collab-Hub are different than JS/Node events. I will capitalize 'Events' when referring to Collab-Hub's use. Think of Events as instantaneous occurrences, like button presses, section changes (although you could use section values too), start/stop signifiers, etc.
+
+Events use a different but similar syntax. Events are stored on the server as an array. The array is sent to all connected clients whenever a new event is sent to the server. All events (currently) are sent to all connected clients. 
+
+Events are different than Control Data-- they don't take a value. They get sent all connected clients (for right now). The Event syntax is as follows
+
+	event [event header]
+
+Example 
+
+	event button1
+
+![send data](/docs/images/6-send_data.png)
+
 
 ## Data
 Server accepts most data-related messages in a <command> <header> <value> syntax.
