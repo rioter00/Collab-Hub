@@ -42,6 +42,26 @@
 					"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
 					"fontface" : 1,
 					"hint" : "",
+					"id" : "obj-208",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1109.5, 619.25, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "9",
+					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
+					"fontface" : 1,
+					"hint" : "",
 					"id" : "obj-204",
 					"ignoreclick" : 1,
 					"legacytextcolor" : 1,
@@ -2249,7 +2269,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1238.0, 707.0, 48.0, 76.0 ],
+					"patching_rect" : [ 1235.0, 707.0, 48.0, 76.0 ],
 					"text" : "\"-err, no control header, yet\""
 				}
 
@@ -5014,7 +5034,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 996.125, 619.25, 139.0, 24.0 ],
+					"patching_rect" : [ 996.125, 619.25, 108.0, 24.0 ],
 					"text" : "Receive Data"
 				}
 
@@ -7416,26 +7436,6 @@
 					"patching_rect" : [ 14.75, 641.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "9",
-					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
-					"fontface" : 1,
-					"hint" : "",
-					"id" : "obj-272",
-					"ignoreclick" : 1,
-					"legacytextcolor" : 1,
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 1109.5, 619.0, 20.0, 20.0 ],
-					"rounded" : 60.0,
-					"text" : "8",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
 				}
 

@@ -83,9 +83,7 @@ If you request with `getUsers`, the server will send the response with a 'users'
 Example
 	
 	users 	[
-	{'id': [socketid], 'username': [username], 
-	'id': [socketid], 'username': [username],
-	'id': [socketid], 'username': [username]}
+		{ 'id': [socketid], 'username': [username] },{ 	'id': [socketid], 'username': [username] },{	'id': [socketid], 'username': [username] }
 	]
 
 
@@ -123,13 +121,18 @@ Example
 #### Name your headers
 Headers should describe either the type of data or the type of controller the values are representing. Sliders, Knobs, Buttons, Mouse, etc.
 
+You can use headers using OSC-style conventions:
+
+	control /Eric/slider1 .5
+	control /1/blue/knob2 127
+
 #### How is this stored on the server?
 Control Data is stored on the server as an array of Objects with two key/value pairs:
 
 	[
-		{ 'header': [headername], 'values': [values],
-		'header': [headername], 'values': [values],
-		'header': [headername], 'values': [values]}
+		{ 'header': [headername], 'values': [values] }, 
+		{ 'header': [headername], 'values': [values] }, 
+		{ 'header': [headername], 'values': [values] }
 	]
 	
 	
@@ -158,12 +161,14 @@ When requesting data from the server, the syntax is as follows
 
 This sends a single request to the server, which will in turn only respond once. In Max, you can use a [metro] object to set a polling interval. Each requested header value can be polled at a different polling interval.
 
-
-
-
 ![request data](/docs/images/8-request_data.png)
 
+## 9. Receiving Data
+When receiving data, you will continue to use route (or osc-route) the requested headers. 
 
+I'm using an additional js script to help handle incoming values (which, remember, maybe one value or multiple values). The value_handler.js also receives an alert from the server if you request a non-existent header by throwing an error message from its right outlet.
+
+![receiving data](/docs/images/9-receiving_data.png)
 
 ## Data
 Server accepts most data-related messages in a <command> <header> <value> syntax.
