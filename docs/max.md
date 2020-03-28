@@ -120,13 +120,28 @@ Example
 
 	control slider1 .5
 
-#### 6. Events
+#### Name your headers
+Headers should describe either the type of data or the type of controller the values are representing. Sliders, Knobs, Buttons, Mouse, etc.
 
-Events for Collab-Hub are different than JS/Node events. I will capitalize 'Events' when referring to Collab-Hub's use. Think of Events as instantaneous occurrences, like button presses, section changes (although you could use section values too), start/stop signifiers, etc.
+#### How is this stored on the server?
+Control Data is stored on the server as an array of Objects with two key/value pairs:
+
+	[
+		{ 'header': [headername], 'values': [values],
+		'header': [headername], 'values': [values],
+		'header': [headername], 'values': [values]}
+	]
+	
+	
+![send data](/docs/images/6-send_data_events.png)
+
+## 7. Triggering Events
+
+Events for Collab-Hub are different from JS/Node events. I will capitalize 'Events' when referring to Collab-Hub's use. Think of Events as instantaneous occurrences, like button presses, section changes (although you could use section values too), start/stop signifiers, etc.
 
 Events use a different but similar syntax. Events are stored on the server as an array. The array is sent to all connected clients whenever a new event is sent to the server. All events (currently) are sent to all connected clients. 
 
-Events are different than Control Data-- they don't take a value. They get sent all connected clients (for right now). The Event syntax is as follows
+Events syntax is different from Control Data-- they don't take a value. They get sent all connected clients (for right now). The Event syntax is as follows
 
 	event [event header]
 
@@ -134,7 +149,20 @@ Example
 
 	event button1
 
-![send data](/docs/images/6-send_data.png)
+## 8. Requesting Data
+The second most important of this server-client setup is requesting data. Outside of Events and Control Dumps, the server will not automatically send control data.
+
+When requesting data from the server, the syntax is as follows
+
+	getControl [headername]  
+
+This sends a single request to the server, which will in turn only respond once. In Max, you can use a [metro] object to set a polling interval. Each requested header value can be polled at a different polling interval.
+
+
+
+
+![request data](/docs/images/8-request_data.png)
+
 
 
 ## Data
@@ -194,7 +222,7 @@ JS Example:
 
 ### 'Events'
 
-Events are different than the JS/Node context. For the purposes of Collab-Hub, Events (capital-E) relate to instantaneous occurrences, like button presses, section changes (although you could use section values too), start/stop signifiers, etc.
+Events are different from the JS/Node context. For the purposes of Collab-Hub, Events (capital-E) relate to instantaneous occurrences, like button presses, section changes (although you could use section values too), start/stop signifiers, etc.
 
 Events use a different but similar syntax. Events are stored on the server as an array. The array is sent to all connected clients whenever a new event is sent to the server. All events (currently) are sent to all connected clients. 
 
