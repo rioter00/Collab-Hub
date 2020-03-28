@@ -16,14 +16,26 @@ The Max Client patch is called 'Collab Client' in the [source package](https://g
 [\#1. Node for Max and NPM](https://github.com/rioter00/Collab-Hub/blob/master/docs/max.md#1-node-max-and-npm)
 
 [\#2. Start Script and Connection Confirmation](https://github.com/rioter00/Collab-Hub/blob/master/docs/max.md#2-start-script-and-connection-confirmation)
-3. Check System Messages
-4. Add username
-5. Chat
-6. Sending Data, naming headers
-7. Trigger Events
-8. Requesting Data
-9. Receiving Data
-10. Data Dumps
+
+[\#3. Check System Messages](https://github.com/rioter00/Collab-Hub/blob/master/docs/max.md#3-check-system-messages)
+
+[\#4. Add username](https://github.com/rioter00/Collab-Hub/blob/master/docs/max.md#4-add-username)
+
+[\#5. Chat](https://github.com/rioter00/Collab-Hub/blob/master/docs/max.md#5-chat)
+
+[\#6. Sending Data, naming headers](https://github.com/rioter00/Collab-Hub/blob/master/docs/max.md#6-sending-data-naming-headers)
+
+[\#7. Trigger Events](https://github.com/rioter00/Collab-Hub/blob/master/docs/max.md#7-triggering-events)
+
+[\#8. Requesting Data](https://github.com/rioter00/Collab-Hub/blob/master/docs/max.md#8-requesting-data)
+
+[\#9. Receiving Data](https://github.com/rioter00/Collab-Hub/blob/master/docs/max.md#9-receiving-data)
+
+[\#10. Data Dumps](https://github.com/rioter00/Collab-Hub/blob/master/docs/max.md#10-dumps)
+
+[\#11. Using Dumps for Umenus](https://github.com/rioter00/Collab-Hub/blob/master/docs/max.md#11-using-dumps-for-umenus)
+
+[\#12. Matrices](https://github.com/rioter00/Collab-Hub/blob/master/docs/max.md#12-matrices)
 
 
 ### 1. Node Max and NPM
