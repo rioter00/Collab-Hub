@@ -25,7 +25,7 @@ The Max Client patch is called 'Collab Client' in the [source package](https://g
 10. Data Dumps
 
 
-### Node Max and NPM
+### 1. Node Max and NPM
 ![NPM](/docs/images/1-npm.png)
 Our server and the client patch use [Node.JS](https://www.w3schools.com/nodejs/nodejs_events.asp). Node allows us to use any number of available code libraries as well as web connectivity. Designers can decide that their code needs a certain code library/module-- but instead of including those needed files, Node allows the end-user to use [Node Package Manager](https://www.w3schools.com/nodejs/nodejs_npm.asp) (NPM) to download need packages/modules/libraries. This does a number of good things including reducing bloat and allows users to download the needed/most up-to-date version.
 
@@ -38,7 +38,7 @@ It's a good idea to download the needed packages, especially the first time you'
 You should see, in the Max Console, `completed` after NPM has successfully updated the modules. You can see the downloaded modules in the 'modules' folder.
 
 ---
-## Start Script and Connection Confirmation
+## 2. Start Script and Connection Confirmation
 This patch uses set of code written in JavaScript which interacts with Node.JS and NodeForMax. 
 
 ![node script](/docs/images/2-client_script.png)
@@ -47,6 +47,51 @@ Part of that code establishes a connection to the server. The rest of the code d
 
 If you double click the `[node.script CollabClient.js]` object to look at the client code. 
 
+
+## 3. Check System Messages
+Occasionally, the system may send relative information. Depending on your use, you might send when scheduled updates may occur/server will go down, pings, etc.
+
+![server messages](/docs/images/3-server_message.png)
+
+You don't manually need to do anything, at the moment.
+
+Messages from the server are the following syntax
+
+	serverMessage [message]
+
+Example
+
+	serverMessage The server will to update 3:00 AM EST. Service will be unavailable until 3:10 AM.
+
+---
+# 4. Add username
+Your socket id is logged when you make your initial connection to the server. You can add your username. When you disconnect, your name will removed. All connect clients will received connected users with/without usernames.
+
+![username](/docs/images/4-username.png)
+![users](/docs/images/4-users.png)
+
+When you send your username to the server, you use the syntax
+
+	addUsername [username]
+
+You can also request the list of all connected with 
+
+	getUsers
+
+You can clear the array of all connect clients on the server. Please use this with caution, as this clears the user list on the server.
+
+	clearUsers
+
+## 5. Chat
+You can chat with other connected users. You can see the textbox to type into and the message will be sent to all other users. The syntax to send a chat message is
+
+	chat [Chat Message]
+
+Incoming chat messages from the server follow this syntax
+
+	chat [Chat Message]
+
+![chat](/docs/images/5-chat.png)
 
 ## Data
 Server accepts most data-related messages in a <command> <header> <value> syntax.

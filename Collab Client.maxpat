@@ -2345,7 +2345,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 715.25, 33.5, 175.0, 24.0 ],
+					"patching_rect" : [ 715.25, 214.0, 100.0, 24.0 ],
 					"text" : "Username"
 				}
 
@@ -4407,7 +4407,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 715.25, 220.5, 175.0, 24.0 ],
+					"patching_rect" : [ 715.25, 37.5, 175.0, 24.0 ],
 					"text" : "Server Messages"
 				}
 
@@ -4419,7 +4419,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 881.25, 222.5, 76.0, 74.0 ],
+					"patching_rect" : [ 881.25, 39.5, 76.0, 74.0 ],
 					"text" : "Sometimes, server will send an important message"
 				}
 
@@ -4431,7 +4431,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 715.25, 311.0, 72.0, 22.0 ],
+					"patching_rect" : [ 715.25, 128.0, 72.0, 22.0 ],
 					"text" : "prepend set"
 				}
 
@@ -4442,7 +4442,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 715.25, 341.0, 150.0, 20.0 ],
+					"patching_rect" : [ 715.25, 158.0, 150.0, 20.0 ],
 					"text" : "clearing user list"
 				}
 
@@ -4454,7 +4454,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 715.25, 279.0, 126.0, 22.0 ],
+					"patching_rect" : [ 715.25, 96.0, 126.0, 22.0 ],
 					"text" : "route serverMessage"
 				}
 
@@ -4468,7 +4468,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 715.25, 251.0, 75.0, 22.0 ],
+					"patching_rect" : [ 715.25, 68.0, 75.0, 22.0 ],
 					"text" : "r fromServer"
 				}
 
@@ -5776,7 +5776,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 810.25, 163.0, 147.0, 22.0 ],
+					"patching_rect" : [ 810.25, 343.5, 147.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -5836,7 +5836,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 787.25, 90.5, 31.0, 22.0 ],
+					"patching_rect" : [ 787.25, 271.0, 31.0, 22.0 ],
 					"text" : "t b s"
 				}
 
@@ -7520,7 +7520,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 843.25, 42.0, 20.0, 20.0 ],
+					"patching_rect" : [ 854.25, 37.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "3",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -9283,7 +9283,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 823.25, 59.0, 138.0, 24.0 ],
+					"patching_rect" : [ 823.25, 239.5, 138.0, 24.0 ],
 					"text" : "Enter your username"
 				}
 
@@ -9295,7 +9295,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 715.25, 90.5, 59.0, 22.0 ],
+					"patching_rect" : [ 715.25, 271.0, 59.0, 22.0 ],
 					"text" : "route text"
 				}
 
@@ -9311,7 +9311,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"outputmode" : 1,
 					"parameter_enable" : 0,
-					"patching_rect" : [ 715.25, 59.0, 100.0, 23.0 ],
+					"patching_rect" : [ 715.25, 239.5, 100.0, 23.0 ],
 					"text" : "Nick"
 				}
 
@@ -9431,7 +9431,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 848.75, 126.5, 101.0, 22.0 ],
+					"patching_rect" : [ 848.75, 307.0, 101.0, 22.0 ],
 					"text" : "addUsername $1"
 				}
 
@@ -9571,7 +9571,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 715.25, 126.5, 66.0, 22.0 ],
+					"patching_rect" : [ 715.25, 307.0, 66.0, 22.0 ],
 					"text" : "clearUsers"
 				}
 
@@ -9583,7 +9583,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 787.25, 126.5, 57.0, 22.0 ],
+					"patching_rect" : [ 787.25, 307.0, 57.0, 22.0 ],
 					"text" : "getUsers"
 				}
 
@@ -10052,7 +10052,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 715.25, 163.0, 63.0, 22.0 ],
+					"patching_rect" : [ 715.25, 343.5, 63.0, 22.0 ],
 					"text" : "s toServer"
 				}
 
@@ -10504,7 +10504,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 704.75, 24.5, 264.5, 168.0 ],
+					"patching_rect" : [ 704.75, 205.0, 264.5, 168.0 ],
 					"proportion" : 0.5
 				}
 
@@ -10550,7 +10550,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 704.75, 207.5, 264.5, 168.0 ],
+					"patching_rect" : [ 704.75, 24.5, 264.5, 168.0 ],
 					"proportion" : 0.5
 				}
 
@@ -10587,7 +10587,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
-					"midpoints" : [ 724.75, 122.5, 782.75, 122.5, 782.75, 83.5, 796.75, 83.5 ],
+					"midpoints" : [ 724.75, 303.0, 782.75, 303.0, 782.75, 264.0, 796.75, 264.0 ],
 					"source" : [ "obj-107", 0 ]
 				}
 
