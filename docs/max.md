@@ -13,7 +13,8 @@ Connection to the server through socket.io happens automatically. Each client is
 The Max Client patch is called 'Collab Client' in the [source package](https://github.com/rioter00/Collab-Hub). The Collab Client patch uses vanilla Max objects. 
 
 # The Anatomy of the Patch
-1. Node for Max and NPM
+[\#1. Node for Max and NPM](#1.-node-max-and-npm)
+
 2. Start Script and Connection Confirmation
 3. Check System Messages
 4. Add username
