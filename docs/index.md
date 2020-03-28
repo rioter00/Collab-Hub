@@ -1,6 +1,7 @@
 1. [About Collab-Hub](index.md)
 2. [Basic API](api.md)
 3. [Using Max with Collab-Hub](max.md)
+4. [Web Pages as Client](web-client.md)
 
 ---
 # Welcome to Collab-Hub
