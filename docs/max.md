@@ -1,42 +1,39 @@
-# Welcome to Collab-Hub
-Collab-Hub is a server-based data server meant for remote/telematic musical performance.
+1. [About Collab-Hub](index.md)
+2. [Basic API](api.md)
+3. [Using Max with Collab-Hub](max.md)
 
-Source: [https://github.com/rioter00/Collab-Hub](https://github.com/rioter00/Collab-Hub)
+# Using Max with Collab-Hub
 
-Authors: Nick Hwang (nickthwang@gmail.com)
-Support: Eric Sheffield, Tony Marasco
-
-{{TOC}}
-
----
-Note: The client examples currently are for Cycling74's Max and Web Interface.
-The current instance of the server is meant for public use. If you would like to work with me on more specific and private use, please contact me. 
-
-What does the Server do?
-
-- Receives control data and  sends out control data upon request.
-- Receives and sends event occurrences (think a button press)
-- Maintains record of connected clients (server uses socket.io).
-
----
-Before we move forward, I start by talking about the underlying command structure, syntax, JS, Node.JS, socket.io nitty gritty, but if you are here for the the MaxMSP and/or web portions of this, you will not have to understand all/any of this. 
-
-You can skip ahead to the Max portion, if you wish. :-)
-
----
-## BASIC API
-
-### Connection:
+## Connection:
 
 Server is located at [https://remote-collab.herokuapp.com](https://remote-collab.herokuapp.com)
 
-Connection to the server through socket.io happens automatically. Each client is registered, and an array of all connected clients (by socket id) is sent to all other connected clients, with an event `'users'`.
+Connection to the server through socket.io happens automatically. Each client is registered, and an array of all connected clients (by socket id) is sent to all other connected clients, with an event `'users'`. The client patch uses [Node for Max](https://docs.cycling74.com/nodeformax/api/) and JavaScript.
 
-### Data
+The Max Client patch is called 'Collab Client' in the [source package](https://github.com/rioter00/Collab-Hub). The Collab Client patch uses vanilla Max objects. 
+
+# The Anatomy of the Patch
+1. Node for Max and NPM
+2. Start Script and Connection Confirmation
+3. Check System Messages
+4. Add username
+5. Chat
+6. Sending Data, naming headers
+7. Trigger Events
+8. Requesting Data
+9. Receiving Data
+10. Data Dumps
+
+
+### Node Max and NPM
+![images/1 - NPM.png](NPM)
+
+
+## Data
 Server accepts most data-related messages in a <command> <header> <value> syntax.
 
 
-#### Available Commands/Events:
+### Available Commands/Events:
 Commands sent to server are wrapped in Node.JS event system. Here are a couple useful links: [https://www.w3schools.com/nodejs/nodejs_events.asp](https://www.w3schools.com/nodejs/nodejs_events.asp)
 
 
@@ -89,7 +86,7 @@ JS Example:
 
 ### 'Events'
 
-Events are different than the JS/Node context. For the purposes of Collab-Hub, (capital-E) Events relate to instantaneous occurrences, like button presses, section changes (although you could use section values too), start/stop signifiers, etc.
+Events are different than the JS/Node context. For the purposes of Collab-Hub, Events (capital-E) relate to instantaneous occurrences, like button presses, section changes (although you could use section values too), start/stop signifiers, etc.
 
 Events use a different but similar syntax. Events are stored on the server as an array. The array is sent to all connected clients whenever a new event is sent to the server. All events (currently) are sent to all connected clients. 
 
@@ -105,6 +102,7 @@ Example
 JS Example
 
 	socket.emit('event', 'button1');
+
 
 
 #### Receive/Listen for an event from the server
@@ -149,7 +147,7 @@ JS Example
 	});
 
 
-#### Update your user information with your name
+#### Update your user information with a username
 Users can add a name to their id. The server will match your socket id within the users array and add a value to the 'username' id. 
 
 Event/Command syntax

@@ -1,6 +1,7 @@
 1. [About Collab-Hub](index.md)
 2. [Basic API](api.md)
 3. [Using Max with Collab-Hub](max.md)
+
 # BASIC API
 
 ## Connection:
@@ -66,7 +67,7 @@ JS Example:
 
 ### 'Events'
 
-Events are different than the JS/Node context. For the purposes of Collab-Hub, (capital-E) Events relate to instantaneous occurrences, like button presses, section changes (although you could use section values too), start/stop signifiers, etc.
+Events are different than the JS/Node context. For the purposes of Collab-Hub, Events (capital-E) relate to instantaneous occurrences, like button presses, section changes (although you could use section values too), start/stop signifiers, etc.
 
 Events use a different but similar syntax. Events are stored on the server as an array. The array is sent to all connected clients whenever a new event is sent to the server. All events (currently) are sent to all connected clients. 
 
@@ -82,6 +83,7 @@ Example
 JS Example
 
 	socket.emit('event', 'button1');
+
 
 
 #### Receive/Listen for an event from the server
@@ -126,7 +128,7 @@ JS Example
 	});
 
 
-#### Update your user information with your name
+#### Update your user information with a username
 Users can add a name to their id. The server will match your socket id within the users array and add a value to the 'username' id. 
 
 Event/Command syntax

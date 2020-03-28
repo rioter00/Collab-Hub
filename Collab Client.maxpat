@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 56.0, 1372.0, 810.0 ],
+		"rect" : [ 34.0, 56.0, 1152.0, 810.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -4199,7 +4199,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 556.0, 1290.25, 279.0, 23.0 ],
-					"text" : "mouseidle 0.19469 0.870575 0 0 0 0 0 0"
+					"text" : "mouseidle 0.871681 0.950221 0 0 0 0 0 0"
 				}
 
 			}
@@ -9698,7 +9698,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 8.25, 56.0, 301.0, 33.0 ],
-					"text" : "This is a Max Interface for a hardware agnostic-control data. Server logs names of headers, events, users."
+					"text" : "This is a Max Interface for Collab-Hub.\nSource: https://github.com/rioter00/Collab-Hub"
 				}
 
 			}
@@ -9744,7 +9744,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 8.25, 20.0, 271.0, 33.0 ],
-					"text" : "Remote Collab Engine",
+					"text" : "Collab-Hub Max Client",
 					"underline" : 1
 				}
 
@@ -11974,13 +11974,6 @@
 			}
 , 			{
 				"name" : "control_dump.js",
-				"bootpath" : "~/Documents/GitHub/Remote-Collab-Client",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "get_selected.js",
 				"bootpath" : "~/Documents/GitHub/Remote-Collab-Client",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
