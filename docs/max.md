@@ -26,7 +26,7 @@ The Max Client patch is called 'Collab Client' in the [source package](https://g
 
 
 ### Node Max and NPM
-![images/1 - NPM.png](NPM)
+![NPM](images/1 - NPM.png)
 
 
 ## Data
