@@ -1,4 +1,6 @@
 ![logo](https://github.com/rioter00/Collab-Hub/blob/master/docs/images/Collab-Hub.png)
+
+
 ![[https://github.com/rioter00/Collab-Hub/blob/master/docs/images/Collab-Hub.png|80px]]
 
 1. [About Collab-Hub](index.md)
