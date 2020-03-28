@@ -1,3 +1,7 @@
+[logo]:(/docs/images/Collab-Hub.png)
+
+![logo][logo]
+
 1. [About Collab-Hub](index.md)
 2. [Basic API](api.md)
 3. [Using Max with Collab-Hub](max.md)

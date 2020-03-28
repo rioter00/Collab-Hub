@@ -1,6 +1,6 @@
 [logo]:(/docs/images/Collab-Hub.png)
 
-![logo]
+![logo][logo]
 
 1. [About Collab-Hub](index.md)
 2. [Basic API](api.md)
