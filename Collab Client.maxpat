@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 56.0, 1019.0, 810.0 ],
+		"rect" : [ 34.0, 56.0, 1041.0, 810.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,31 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-174",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1806.0, 939.0, 113.0, 47.0 ],
+					"presentation_linecount" : 2,
+					"text" : "THIS METHOD IS NOT RECOMMENDED"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-172",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 194.00000011920929, 312.0, 132.0, 22.0 ],
+					"text" : "setServerConsole true"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
 					"fontface" : 1,
@@ -219,7 +244,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-226",
-					"items" : [ "/nickhwang/xySlider", ",", "multi1", ",", "slider1" ],
+					"items" : "slider1",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -349,7 +374,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 989.5, 1554.5, 98.0, 171.0 ],
+					"patching_rect" : [ 989.5, 1554.5, 99.0, 171.0 ],
 					"text" : "Dictionaries with the same name access the same data.\n\nCheck the main patcher for where the dictionary first populates."
 				}
 
@@ -396,7 +421,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-310",
-					"items" : [ "/nickhwang/xySlider", ",", "multi1", ",", "slider1" ],
+					"items" : "slider1",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -879,7 +904,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-25",
-									"items" : [ "/nickhwang/xySlider", ",", "multi1", ",", "slider1" ],
+									"items" : "slider1",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -1083,7 +1108,7 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-62",
-													"items" : [ "/nickhwang/xySlider", ",", "multi1", ",", "slider1" ],
+													"items" : "slider1",
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -1405,7 +1430,7 @@
 													"numoutlets" : 4,
 													"outlettype" : [ "list", "", "", "" ],
 													"patching_rect" : [ 97.25, 251.0, 218.0, 188.0 ],
-													"rows" : 3
+													"rows" : 1
 												}
 
 											}
@@ -1448,7 +1473,7 @@
 												"box" : 												{
 													"activecolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 1.0 ],
 													"bgcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
-													"disabled" : [ 0, 0, 0 ],
+													"disabled" : [ 0 ],
 													"elementcolor" : [ 0.607843137254902, 0.47843137254902, 0.47843137254902, 1.0 ],
 													"id" : "obj-1",
 													"itemtype" : 1,
@@ -1458,9 +1483,9 @@
 													"offset" : 18,
 													"outlettype" : [ "" ],
 													"parameter_enable" : 0,
-													"patching_rect" : [ 72.0, 251.0, 18.0, 56.0 ],
-													"size" : 3,
-													"values" : [ 0, 0, 0 ]
+													"patching_rect" : [ 72.0, 251.0, 18.0, 20.0 ],
+													"size" : 1,
+													"values" : [ 0 ]
 												}
 
 											}
@@ -1872,7 +1897,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-92",
-									"items" : [ "/nickhwang/xySlider", ",", "multi1", ",", "slider1" ],
+									"items" : "slider1",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -1919,7 +1944,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 236.0, 349.0, 50.0, 22.0 ],
-									"text" : "3"
+									"text" : "1"
 								}
 
 							}
@@ -2671,7 +2696,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1362.833333333333485, 707.0, 48.0, 76.0 ],
+					"patching_rect" : [ 1362.833333333333485, 707.0, 45.166666666666515, 76.0 ],
 					"text" : "\"-err, no control header, yet\""
 				}
 
@@ -2829,7 +2854,7 @@
 					"outputmode" : 1,
 					"parameter_enable" : 0,
 					"patching_rect" : [ 728.416665554046631, 472.5, 174.666668891906738, 49.666667461395264 ],
-					"text" : "yo yo yo yo "
+					"text" : "Hello?"
 				}
 
 			}
@@ -3020,7 +3045,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1911.0, 770.666650056838989, 50.0, 22.0 ],
-					"text" : "60 60"
+					"text" : "64 55"
 				}
 
 			}
@@ -3197,7 +3222,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2016.000052452087402, 269.5, 50.0, 22.0 ],
-					"text" : "44"
+					"text" : "55"
 				}
 
 			}
@@ -3209,7 +3234,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1961.000052452087402, 269.5, 50.0, 22.0 ],
-					"text" : "52"
+					"text" : "64"
 				}
 
 			}
@@ -4293,7 +4318,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1734.5, 891.5, 171.0, 33.0 ],
+					"patching_rect" : [ 1699.5, 891.75, 171.0, 33.0 ],
 					"text" : "Could use a metro to constantly poll control dumps"
 				}
 
@@ -4654,7 +4679,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 556.0, 1290.25, 279.0, 23.0 ]
+					"patching_rect" : [ 556.0, 1290.25, 279.0, 23.0 ],
+					"text" : "mouseidle 0.433628 0.897124 0 0 0 0 0 0"
 				}
 
 			}
@@ -5231,12 +5257,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-205",
-					"linecount" : 5,
+					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1477.833333333333485, 707.0, 48.0, 76.0 ],
+					"patching_rect" : [ 1454.0, 712.0, 68.833333333333485, 62.0 ],
 					"text" : "\"-err, no control header, yet\""
 				}
 
@@ -6724,20 +6750,20 @@
 												"filekind" : "audiofile",
 												"loop" : 1,
 												"content_state" : 												{
-													"pitchcorrection" : [ 0 ],
-													"followglobaltempo" : [ 0 ],
-													"mode" : [ "basic" ],
-													"originallengthms" : [ 0 ],
-													"timestretch" : [ 0 ],
-													"formantcorrection" : [ 0 ],
-													"formant" : [ 1 ],
-													"originallength" : [ 0, "ticks" ],
-													"speed" : [ 1 ],
-													"pitchshift" : [ 1 ],
-													"quality" : [ "basic" ],
 													"originaltempo" : [ 120 ],
 													"basictuning" : [ 440 ],
+													"speed" : [ 1 ],
+													"originallengthms" : [ 0 ],
+													"pitchcorrection" : [ 0 ],
+													"followglobaltempo" : [ 0 ],
+													"formant" : [ 1 ],
+													"timestretch" : [ 0 ],
+													"formantcorrection" : [ 0 ],
+													"pitchshift" : [ 1 ],
+													"originallength" : [ 0, "ticks" ],
 													"slurtime" : [ 0 ],
+													"quality" : [ "basic" ],
+													"mode" : [ "basic" ],
 													"play" : [ 0 ],
 													"pitchshiftcent" : [ 0 ]
 												}
@@ -6749,20 +6775,20 @@
 												"filekind" : "audiofile",
 												"loop" : 1,
 												"content_state" : 												{
-													"pitchcorrection" : [ 0 ],
-													"followglobaltempo" : [ 0 ],
-													"mode" : [ "basic" ],
-													"originallengthms" : [ 0 ],
-													"timestretch" : [ 0 ],
-													"formantcorrection" : [ 0 ],
-													"formant" : [ 1 ],
-													"originallength" : [ 0, "ticks" ],
-													"speed" : [ 1 ],
-													"pitchshift" : [ 1 ],
-													"quality" : [ "basic" ],
 													"originaltempo" : [ 120 ],
 													"basictuning" : [ 440 ],
+													"speed" : [ 1 ],
+													"originallengthms" : [ 0 ],
+													"pitchcorrection" : [ 0 ],
+													"followglobaltempo" : [ 0 ],
+													"formant" : [ 1 ],
+													"timestretch" : [ 0 ],
+													"formantcorrection" : [ 0 ],
+													"pitchshift" : [ 1 ],
+													"originallength" : [ 0, "ticks" ],
 													"slurtime" : [ 0 ],
+													"quality" : [ "basic" ],
+													"mode" : [ "basic" ],
 													"play" : [ 0 ],
 													"pitchshiftcent" : [ 0 ]
 												}
@@ -6774,20 +6800,20 @@
 												"filekind" : "audiofile",
 												"loop" : 0,
 												"content_state" : 												{
-													"pitchcorrection" : [ 0 ],
-													"followglobaltempo" : [ 0 ],
-													"mode" : [ "basic" ],
-													"originallengthms" : [ 0 ],
-													"timestretch" : [ 0 ],
-													"formantcorrection" : [ 0 ],
-													"formant" : [ 1 ],
-													"originallength" : [ 0, "ticks" ],
-													"speed" : [ 1 ],
-													"pitchshift" : [ 1 ],
-													"quality" : [ "basic" ],
 													"originaltempo" : [ 120 ],
 													"basictuning" : [ 440 ],
+													"speed" : [ 1 ],
+													"originallengthms" : [ 0 ],
+													"pitchcorrection" : [ 0 ],
+													"followglobaltempo" : [ 0 ],
+													"formant" : [ 1 ],
+													"timestretch" : [ 0 ],
+													"formantcorrection" : [ 0 ],
+													"pitchshift" : [ 1 ],
+													"originallength" : [ 0, "ticks" ],
 													"slurtime" : [ 0 ],
+													"quality" : [ "basic" ],
+													"mode" : [ "basic" ],
 													"play" : [ 0 ],
 													"pitchshiftcent" : [ 0 ]
 												}
@@ -8144,7 +8170,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-25",
-									"items" : [ "/nickhwang/xySlider", ",", "multi1", ",", "slider1" ],
+									"items" : "slider1",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -8348,7 +8374,7 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-62",
-													"items" : [ "/nickhwang/xySlider", ",", "multi1", ",", "slider1" ],
+													"items" : "slider1",
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -8513,7 +8539,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+										"rect" : [ 59.0, 81.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -8540,6 +8566,7 @@
 										"tags" : "",
 										"style" : "",
 										"subpatcher_template" : "",
+										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"bgcolor" : [ 0.196078431372549, 0.196078431372549, 0.196078431372549, 1.0 ],
@@ -8670,7 +8697,7 @@
 													"numoutlets" : 4,
 													"outlettype" : [ "list", "", "", "" ],
 													"patching_rect" : [ 97.25, 251.0, 218.0, 188.0 ],
-													"rows" : 3
+													"rows" : 1
 												}
 
 											}
@@ -8713,7 +8740,7 @@
 												"box" : 												{
 													"activecolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 1.0 ],
 													"bgcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
-													"disabled" : [ 0, 0, 0 ],
+													"disabled" : [ 0 ],
 													"elementcolor" : [ 0.607843137254902, 0.47843137254902, 0.47843137254902, 1.0 ],
 													"id" : "obj-1",
 													"itemtype" : 1,
@@ -8723,9 +8750,9 @@
 													"offset" : 18,
 													"outlettype" : [ "" ],
 													"parameter_enable" : 0,
-													"patching_rect" : [ 72.0, 251.0, 18.0, 56.0 ],
-													"size" : 3,
-													"values" : [ 0, 0, 0 ]
+													"patching_rect" : [ 72.0, 251.0, 18.0, 20.0 ],
+													"size" : 1,
+													"values" : [ 0 ]
 												}
 
 											}
@@ -9137,7 +9164,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-92",
-									"items" : [ "/nickhwang/xySlider", ",", "multi1", ",", "slider1" ],
+									"items" : "slider1",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -9184,7 +9211,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 236.0, 372.0, 50.0, 22.0 ],
-									"text" : "2"
+									"text" : "0"
 								}
 
 							}
@@ -9701,7 +9728,7 @@
 					"outputmode" : 1,
 					"parameter_enable" : 0,
 					"patching_rect" : [ 715.25, 239.5, 100.0, 23.0 ],
-					"text" : "Nick"
+					"text" : "Nick Hwang"
 				}
 
 			}
@@ -10215,8 +10242,6 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 0,
 										"defer" : 0,
-										"node_bin_path" : "",
-										"npm_bin_path" : "",
 										"watch" : 0
 									}
 ,
@@ -10377,6 +10402,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -11292,6 +11319,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-105", 0 ],
 					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"midpoints" : [ 203.50000011920929, 342.0, 345.0, 342.0 ],
+					"source" : [ "obj-172", 0 ]
 				}
 
 			}
