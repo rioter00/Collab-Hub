@@ -170,7 +170,7 @@ This sends a single request to the server, which will in turn only respond once.
 ## 9. Receiving Data
 When receiving data, you will continue to use route (or osc-route) the requested headers. 
 
-I'm using an additional js script to help handle incoming values (which, remember, maybe one value or multiple values). The [value_handler.js](value_handler.js) also receives an alert from the server if you request a non-existent header by throwing an error message from its right outlet.
+I'm using an additional js script to help handle incoming values (which, remember, maybe one value or multiple values). The [value_handler.js](/value_handler.js) also receives an alert from the server if you request a non-existent header by throwing an error message from its right outlet.
 
 ![receiving data](/docs/images/9-receiving_data.png)
 
