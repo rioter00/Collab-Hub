@@ -45,20 +45,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1806.0, 939.0, 113.0, 47.0 ],
-					"presentation_linecount" : 2,
 					"text" : "THIS METHOD IS NOT RECOMMENDED"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-172",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 194.00000011920929, 312.0, 132.0, 22.0 ],
-					"text" : "setServerConsole true"
 				}
 
 			}
@@ -244,7 +231,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-226",
-					"items" : "slider1",
+					"items" : "video1",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -421,7 +408,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-310",
-					"items" : "slider1",
+					"items" : "video1",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -904,7 +891,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-25",
-									"items" : "slider1",
+									"items" : "video1",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -1108,7 +1095,7 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-62",
-													"items" : "slider1",
+													"items" : "video1",
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -1404,8 +1391,8 @@
 													"id" : "obj-85",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 72.0, 505.0, 143.0, 22.0 ],
 													"saved_object_attributes" : 													{
 														"filename" : "get_selected.js",
@@ -1897,7 +1884,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-92",
-									"items" : "slider1",
+									"items" : "video1",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -2696,7 +2683,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1362.833333333333485, 707.0, 45.166666666666515, 76.0 ],
+					"patching_rect" : [ 1362.833333333333485, 707.0, 48.0, 76.0 ],
 					"text" : "\"-err, no control header, yet\""
 				}
 
@@ -4679,8 +4666,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 556.0, 1290.25, 279.0, 23.0 ],
-					"text" : "mouseidle 0.433628 0.897124 0 0 0 0 0 0"
+					"patching_rect" : [ 556.0, 1290.25, 279.0, 23.0 ]
 				}
 
 			}
@@ -6750,11 +6736,7 @@
 												"filekind" : "audiofile",
 												"loop" : 1,
 												"content_state" : 												{
-													"originaltempo" : [ 120 ],
-													"basictuning" : [ 440 ],
 													"speed" : [ 1 ],
-													"originallengthms" : [ 0 ],
-													"pitchcorrection" : [ 0 ],
 													"followglobaltempo" : [ 0 ],
 													"formant" : [ 1 ],
 													"timestretch" : [ 0 ],
@@ -6762,8 +6744,12 @@
 													"pitchshift" : [ 1 ],
 													"originallength" : [ 0, "ticks" ],
 													"slurtime" : [ 0 ],
-													"quality" : [ "basic" ],
 													"mode" : [ "basic" ],
+													"originaltempo" : [ 120 ],
+													"basictuning" : [ 440 ],
+													"originallengthms" : [ 0 ],
+													"pitchcorrection" : [ 0 ],
+													"quality" : [ "basic" ],
 													"play" : [ 0 ],
 													"pitchshiftcent" : [ 0 ]
 												}
@@ -6775,11 +6761,7 @@
 												"filekind" : "audiofile",
 												"loop" : 1,
 												"content_state" : 												{
-													"originaltempo" : [ 120 ],
-													"basictuning" : [ 440 ],
 													"speed" : [ 1 ],
-													"originallengthms" : [ 0 ],
-													"pitchcorrection" : [ 0 ],
 													"followglobaltempo" : [ 0 ],
 													"formant" : [ 1 ],
 													"timestretch" : [ 0 ],
@@ -6787,8 +6769,12 @@
 													"pitchshift" : [ 1 ],
 													"originallength" : [ 0, "ticks" ],
 													"slurtime" : [ 0 ],
-													"quality" : [ "basic" ],
 													"mode" : [ "basic" ],
+													"originaltempo" : [ 120 ],
+													"basictuning" : [ 440 ],
+													"originallengthms" : [ 0 ],
+													"pitchcorrection" : [ 0 ],
+													"quality" : [ "basic" ],
 													"play" : [ 0 ],
 													"pitchshiftcent" : [ 0 ]
 												}
@@ -6800,11 +6786,7 @@
 												"filekind" : "audiofile",
 												"loop" : 0,
 												"content_state" : 												{
-													"originaltempo" : [ 120 ],
-													"basictuning" : [ 440 ],
 													"speed" : [ 1 ],
-													"originallengthms" : [ 0 ],
-													"pitchcorrection" : [ 0 ],
 													"followglobaltempo" : [ 0 ],
 													"formant" : [ 1 ],
 													"timestretch" : [ 0 ],
@@ -6812,8 +6794,12 @@
 													"pitchshift" : [ 1 ],
 													"originallength" : [ 0, "ticks" ],
 													"slurtime" : [ 0 ],
-													"quality" : [ "basic" ],
 													"mode" : [ "basic" ],
+													"originaltempo" : [ 120 ],
+													"basictuning" : [ 440 ],
+													"originallengthms" : [ 0 ],
+													"pitchcorrection" : [ 0 ],
+													"quality" : [ "basic" ],
 													"play" : [ 0 ],
 													"pitchshiftcent" : [ 0 ]
 												}
@@ -8170,7 +8156,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-25",
-									"items" : "slider1",
+									"items" : "video1",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -8374,7 +8360,7 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-62",
-													"items" : "slider1",
+													"items" : "video1",
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -8671,8 +8657,8 @@
 													"id" : "obj-85",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 72.0, 505.0, 143.0, 22.0 ],
 													"saved_object_attributes" : 													{
 														"filename" : "get_selected.js",
@@ -9164,7 +9150,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-92",
-									"items" : "slider1",
+									"items" : "video1",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -10191,7 +10177,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 197.0, 166.0, 121.0, 35.0 ],
-									"text" : "success dictionary u112020216"
+									"text" : "success dictionary u690000915"
 								}
 
 							}
@@ -11319,14 +11305,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-105", 0 ],
 					"source" : [ "obj-17", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"midpoints" : [ 203.50000011920929, 342.0, 345.0, 342.0 ],
-					"source" : [ "obj-172", 0 ]
 				}
 
 			}
@@ -12488,9 +12466,9 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-365::obj-4::obj-18" : [ "number[1]", "number[1]", 0 ],
 			"obj-365::obj-4::obj-21" : [ "number", "number", 0 ],
 			"obj-365::obj-4::obj-20" : [ "live.tab[1]", "live.tab[1]", 0 ],
+			"obj-365::obj-4::obj-18" : [ "number[1]", "number[1]", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -12513,6 +12491,13 @@
 			}
 , 			{
 				"name" : "control_dump.js",
+				"bootpath" : "~/Documents/GitHub/Remote-Collab-Client",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "get_selected.js",
 				"bootpath" : "~/Documents/GitHub/Remote-Collab-Client",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
