@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 56.0, 1041.0, 810.0 ],
+		"rect" : [ 34.0, 56.0, 1549.0, 775.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -231,7 +231,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-226",
-					"items" : "video1",
+					"items" : [ "slider1", ",", "slider2", ",", "multi1" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -408,7 +408,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-310",
-					"items" : "video1",
+					"items" : [ "slider1", ",", "slider2", ",", "multi1" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -891,7 +891,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-25",
-									"items" : "video1",
+									"items" : [ "slider1", ",", "slider2", ",", "multi1" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -1095,7 +1095,7 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-62",
-													"items" : "video1",
+													"items" : [ "slider1", ",", "slider2", ",", "multi1" ],
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -1417,7 +1417,7 @@
 													"numoutlets" : 4,
 													"outlettype" : [ "list", "", "", "" ],
 													"patching_rect" : [ 97.25, 251.0, 218.0, 188.0 ],
-													"rows" : 1
+													"rows" : 3
 												}
 
 											}
@@ -1460,7 +1460,7 @@
 												"box" : 												{
 													"activecolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 1.0 ],
 													"bgcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
-													"disabled" : [ 0 ],
+													"disabled" : [ 0, 0, 0 ],
 													"elementcolor" : [ 0.607843137254902, 0.47843137254902, 0.47843137254902, 1.0 ],
 													"id" : "obj-1",
 													"itemtype" : 1,
@@ -1470,9 +1470,9 @@
 													"offset" : 18,
 													"outlettype" : [ "" ],
 													"parameter_enable" : 0,
-													"patching_rect" : [ 72.0, 251.0, 18.0, 20.0 ],
-													"size" : 1,
-													"values" : [ 0 ]
+													"patching_rect" : [ 72.0, 251.0, 18.0, 56.0 ],
+													"size" : 3,
+													"values" : [ 0, 0, 0 ]
 												}
 
 											}
@@ -1884,7 +1884,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-92",
-									"items" : "video1",
+									"items" : [ "slider1", ",", "slider2", ",", "multi1" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -1931,7 +1931,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 236.0, 349.0, 50.0, 22.0 ],
-									"text" : "1"
+									"text" : "3"
 								}
 
 							}
@@ -2582,7 +2582,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 106.0, 1863.0, 55.0, 22.0 ],
-					"text" : "del 1000"
+					"text" : "del 1500"
 				}
 
 			}
@@ -4666,7 +4666,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 556.0, 1290.25, 279.0, 23.0 ]
+					"patching_rect" : [ 556.0, 1290.25, 279.0, 23.0 ],
+					"text" : "mouseidle 0.80531 0.206858 0 0 0 0 0 0"
 				}
 
 			}
@@ -6736,20 +6737,20 @@
 												"filekind" : "audiofile",
 												"loop" : 1,
 												"content_state" : 												{
-													"speed" : [ 1 ],
+													"originallengthms" : [ 0 ],
+													"quality" : [ "basic" ],
+													"pitchcorrection" : [ 0 ],
 													"followglobaltempo" : [ 0 ],
-													"formant" : [ 1 ],
 													"timestretch" : [ 0 ],
 													"formantcorrection" : [ 0 ],
 													"pitchshift" : [ 1 ],
+													"formant" : [ 1 ],
 													"originallength" : [ 0, "ticks" ],
-													"slurtime" : [ 0 ],
 													"mode" : [ "basic" ],
+													"slurtime" : [ 0 ],
 													"originaltempo" : [ 120 ],
+													"speed" : [ 1 ],
 													"basictuning" : [ 440 ],
-													"originallengthms" : [ 0 ],
-													"pitchcorrection" : [ 0 ],
-													"quality" : [ "basic" ],
 													"play" : [ 0 ],
 													"pitchshiftcent" : [ 0 ]
 												}
@@ -6761,20 +6762,20 @@
 												"filekind" : "audiofile",
 												"loop" : 1,
 												"content_state" : 												{
-													"speed" : [ 1 ],
+													"originallengthms" : [ 0 ],
+													"quality" : [ "basic" ],
+													"pitchcorrection" : [ 0 ],
 													"followglobaltempo" : [ 0 ],
-													"formant" : [ 1 ],
 													"timestretch" : [ 0 ],
 													"formantcorrection" : [ 0 ],
 													"pitchshift" : [ 1 ],
+													"formant" : [ 1 ],
 													"originallength" : [ 0, "ticks" ],
-													"slurtime" : [ 0 ],
 													"mode" : [ "basic" ],
+													"slurtime" : [ 0 ],
 													"originaltempo" : [ 120 ],
+													"speed" : [ 1 ],
 													"basictuning" : [ 440 ],
-													"originallengthms" : [ 0 ],
-													"pitchcorrection" : [ 0 ],
-													"quality" : [ "basic" ],
 													"play" : [ 0 ],
 													"pitchshiftcent" : [ 0 ]
 												}
@@ -6786,20 +6787,20 @@
 												"filekind" : "audiofile",
 												"loop" : 0,
 												"content_state" : 												{
-													"speed" : [ 1 ],
+													"originallengthms" : [ 0 ],
+													"quality" : [ "basic" ],
+													"pitchcorrection" : [ 0 ],
 													"followglobaltempo" : [ 0 ],
-													"formant" : [ 1 ],
 													"timestretch" : [ 0 ],
 													"formantcorrection" : [ 0 ],
 													"pitchshift" : [ 1 ],
+													"formant" : [ 1 ],
 													"originallength" : [ 0, "ticks" ],
-													"slurtime" : [ 0 ],
 													"mode" : [ "basic" ],
+													"slurtime" : [ 0 ],
 													"originaltempo" : [ 120 ],
+													"speed" : [ 1 ],
 													"basictuning" : [ 440 ],
-													"originallengthms" : [ 0 ],
-													"pitchcorrection" : [ 0 ],
-													"quality" : [ "basic" ],
 													"play" : [ 0 ],
 													"pitchshiftcent" : [ 0 ]
 												}
@@ -8156,7 +8157,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-25",
-									"items" : "video1",
+									"items" : [ "slider1", ",", "slider2", ",", "multi1" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -8360,7 +8361,7 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-62",
-													"items" : "video1",
+													"items" : [ "slider1", ",", "slider2", ",", "multi1" ],
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -8683,7 +8684,7 @@
 													"numoutlets" : 4,
 													"outlettype" : [ "list", "", "", "" ],
 													"patching_rect" : [ 97.25, 251.0, 218.0, 188.0 ],
-													"rows" : 1
+													"rows" : 3
 												}
 
 											}
@@ -8726,7 +8727,7 @@
 												"box" : 												{
 													"activecolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 1.0 ],
 													"bgcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
-													"disabled" : [ 0 ],
+													"disabled" : [ 0, 0, 0 ],
 													"elementcolor" : [ 0.607843137254902, 0.47843137254902, 0.47843137254902, 1.0 ],
 													"id" : "obj-1",
 													"itemtype" : 1,
@@ -8736,9 +8737,9 @@
 													"offset" : 18,
 													"outlettype" : [ "" ],
 													"parameter_enable" : 0,
-													"patching_rect" : [ 72.0, 251.0, 18.0, 20.0 ],
-													"size" : 1,
-													"values" : [ 0 ]
+													"patching_rect" : [ 72.0, 251.0, 18.0, 56.0 ],
+													"size" : 3,
+													"values" : [ 0, 0, 0 ]
 												}
 
 											}
@@ -9150,7 +9151,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-92",
-									"items" : "video1",
+									"items" : [ "slider1", ",", "slider2", ",", "multi1" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -9197,7 +9198,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 236.0, 372.0, 50.0, 22.0 ],
-									"text" : "0"
+									"text" : "2"
 								}
 
 							}
@@ -9714,7 +9715,7 @@
 					"outputmode" : 1,
 					"parameter_enable" : 0,
 					"patching_rect" : [ 715.25, 239.5, 100.0, 23.0 ],
-					"text" : "Nick Hwang"
+					"text" : "Nick"
 				}
 
 			}
@@ -10228,6 +10229,8 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 0,
 										"defer" : 0,
+										"node_bin_path" : "",
+										"npm_bin_path" : "",
 										"watch" : 0
 									}
 ,
@@ -10388,8 +10391,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -12467,8 +12468,8 @@
  ],
 		"parameters" : 		{
 			"obj-365::obj-4::obj-21" : [ "number", "number", 0 ],
-			"obj-365::obj-4::obj-20" : [ "live.tab[1]", "live.tab[1]", 0 ],
 			"obj-365::obj-4::obj-18" : [ "number[1]", "number[1]", 0 ],
+			"obj-365::obj-4::obj-20" : [ "live.tab[1]", "live.tab[1]", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -12476,7 +12477,7 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "Remote-Collab-Client",
+				"name" : "Collab-Hub",
 				"bootpath" : "~/Documents/GitHub",
 				"patcherrelativepath" : "..",
 				"type" : "fold",
@@ -12484,28 +12485,28 @@
 			}
 , 			{
 				"name" : "get_header_from_dump.js",
-				"bootpath" : "~/Documents/GitHub/Remote-Collab-Client",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "control_dump.js",
-				"bootpath" : "~/Documents/GitHub/Remote-Collab-Client",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "get_selected.js",
-				"bootpath" : "~/Documents/GitHub/Remote-Collab-Client",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "value_handler.js",
-				"bootpath" : "~/Documents/GitHub/Remote-Collab-Client",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
