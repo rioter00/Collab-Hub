@@ -8,8 +8,8 @@
 
 const maxAPI = require('max-api'),
   io = require('socket.io-client'),
-  socket = io.connect('http://remote-collab.herokuapp.com/');
-	
+  //socket = io.connect('http://remote-collab.herokuapp.com/');
+	socket = io.connect('http://localhost:3000');
 
 socket.on('connect', () => {
   maxAPI.outlet("Connected to server");

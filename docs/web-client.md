@@ -15,3 +15,12 @@ The current semi-working version is located at [http://remote-collab.herokuapp.c
 
 Use this in conjunction with the Max Client Patch to test the output of the webpage.
 
+## Current Functionality
+- Send Customizable Events (Rename event names)
+- Send Control Events using Sliders 
+- List of Users connected to Server
+- Send Chat and Receive Chat messages
+
+### Upcoming Functionality
+- Ability to rename Control Events
+- Ability to add Username
