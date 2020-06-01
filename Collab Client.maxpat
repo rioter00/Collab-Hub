@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 203.0, 1193.0, 587.0 ],
+		"rect" : [ 175.0, 340.0, 1711.0, 706.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -3216,7 +3216,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 728.416665554046631, 857.666667342185974, 150.0, 20.0 ]
+					"patching_rect" : [ 728.416665554046631, 857.666667342185974, 150.0, 20.0 ],
+					"text" : "sdafasdf"
 				}
 
 			}
@@ -3240,7 +3241,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 728.416665554046631, 827.666667342185974, 159.0, 20.0 ],
-					"text" : "Unknown User"
+					"text" : "i_u2bIYYY1SbqS04AAAg"
 				}
 
 			}
@@ -4993,7 +4994,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 556.0, 1290.25, 279.0, 23.0 ],
-					"text" : "mouseidle 0.473451 0.100664 0 0 0 0 0 0"
+					"text" : "mouseidle 0.022124 0.768805 0 0 0 0 0 0"
 				}
 
 			}
@@ -5267,12 +5268,10 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-284",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 715.25, 158.0, 150.0, 33.0 ],
-					"text" : "Collab-Hub Version: 0.0.2b"
+					"patching_rect" : [ 715.25, 158.0, 150.0, 20.0 ]
 				}
 
 			}
@@ -8820,7 +8819,6 @@
 										"tags" : "",
 										"style" : "",
 										"subpatcher_template" : "",
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"bgcolor" : [ 0.196078431372549, 0.196078431372549, 0.196078431372549, 1.0 ],
@@ -9982,7 +9980,7 @@
 					"outputmode" : 1,
 					"parameter_enable" : 0,
 					"patching_rect" : [ 715.25, 239.5, 100.0, 23.0 ],
-					"text" : "NewUser10"
+					"text" : "NewUser1"
 				}
 
 			}
@@ -10496,8 +10494,6 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 0,
 										"defer" : 0,
-										"node_bin_path" : "",
-										"npm_bin_path" : "",
 										"watch" : 0
 									}
 ,
@@ -10658,6 +10654,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
