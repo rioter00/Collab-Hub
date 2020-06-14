@@ -11,16 +11,14 @@ Collab-Hub is a server-based tool meant for remote/telematic musical performance
 
 Source: [https://github.com/rioter00/Collab-Hub](https://github.com/rioter00/Collab-Hub)
 
-Authors: Nick Hwang ([nickthwang@gmail.com](nickthwang@gmail.com))
-
-Support: Eric Sheffield, Tony Marasco
+Authors: Nick Hwang ([nickthwang@gmail.com](nickthwang@gmail.com)), Eric Sheffield, Tony Marasco
 
 ---
 The purpose of Collab-Hub is allow for multiple users (musicians, artists, hackers) to send data easily and remotely so they can collaborate with that data. 
 
 Beyond remote collaboration, Collab-Hub can also be used in other contexts regardless of locality. You can add 'multi-' in front of each of these, as possible the scale of each is increased: laptop orchestra, multi-channel speaker array, video games, net art, multi-site art installation, internet of things, video art (we're sending some small matrices), etc.
 
-My hope is that people will use this tool for artistic collaboration. And I will be able to work with other people (near and far) to enable them to do cool things, together. -- Nick Hwang 
+Our hope is that people will use this tool for artistic collaboration. And I will be able to work with other people (near and far) to enable them to do cool things, together.
 
 ---
 Note: The client examples currently are for [Cycling74](https://cycling74.com)'s Max and Web Interface.
