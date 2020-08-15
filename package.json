@@ -3,7 +3,8 @@
   "author": "Nick Hwang, Eric Sheffield, Tony T Marasco",
   "version": "0.0.0",
   "scripts": {
-    "start": "node Collab.js"
+    "start": "node CollabClientv2.js",
+    "v2": "node CollabClientv2.js"
   },
   "dependencies": {
     "audit": "0.0.6",
