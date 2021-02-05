@@ -10,13 +10,13 @@ var socketid = 'socket';
 
 const maxAPI = require('max-api'),
   io = require('socket.io-client'),
-  // socket = io.connect('http://remote-collab.herokuapp.com/');
-  socket = io.connect(`http://localhost:3000/hub`);
-
+   socket = io.connect('http://collab-hub-v2.herokuapp.com/hub');
+  //socket = io.connect(`http://localhost:3000/hub`);
 
 socket.on('connect', () => {
   maxAPI.outlet("Connected to server");
   maxAPI.outlet("Connected");
+  // console.log("Socket: " + socket.id);
 });
 
 maxAPI.addHandler('joinRoom', (room) => {
@@ -65,8 +65,8 @@ maxAPI.addHandler('observeallevents', (bool) => {
 
 maxAPI.addHandler('event', (header) => {
   socket.emit('event', header);
-  console.log('event sent: ' + header);
-  maxAPI.outlet(["event", header]);
+  // console.log('event sent: ' + header);
+  // maxAPI.outlet(["event", header]);
 })
 
 maxAPI.addHandler('chat', (data) => {
@@ -194,8 +194,15 @@ socket.on('allRooms', function (data) {
   }
   console.log("all rooms.....");
   console.table(allRooms);
-  maxAPI.outlet(["allRooms", allRooms]);
   console.log('rooms output');
+});
+
+socket.on('allRoomDetails', function (data) {
+  let allRoomDetails = {
+    'All Room Details': data
+  }
+  console.log("all room details.....");
+  maxAPI.outlet(["allRoomDetails", allRoomDetails]);
 });
 
 // socket.on('seconds', (data) => {
