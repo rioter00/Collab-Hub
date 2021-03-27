@@ -7,6 +7,7 @@
 
 ---
 # Welcome to Collab-Hub
+### A new update is on the horizon! Looking for an updated API, client templates, and examples of connecting other devices and platforms!
 Collab-Hub is a server-based tool meant for remote/telematic musical performance.
 
 Source: [https://github.com/rioter00/Collab-Hub](https://github.com/rioter00/Collab-Hub)
