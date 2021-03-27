@@ -13,7 +13,7 @@ Source: [https://github.com/rioter00/Collab-Hub](https://github.com/rioter00/Col
 
 Authors: Nick Hwang ([nickthwang@gmail.com](nickthwang@gmail.com)), Eric Sheffield, Tony Marasco
 
-Stay up to date: (http://eepurl.com/humnhn (Join our newsletter)) 
+Stay up to date: ([http://eepurl.com/humnhn](Join our newsletter)) 
 
 ---
 The purpose of Collab-Hub is allow for multiple users (musicians, artists, hackers) to send data easily and remotely so they can collaborate with that data. 
